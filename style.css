@@ -3,6 +3,7 @@
   display: flex;
   justify-content: center;
   flex-flow: wrap;
+  background-color: #E378F1;
 }
 
 .name {
@@ -29,7 +30,7 @@ h3.subtitle {
 
 img.profile {
   border-radius: 2rem;
-  border: 2px solid #ffffff;
+  border: 2px solid black;
   height: 15rem;
   width: auto;
   margin: 1rem;
