@@ -39,7 +39,7 @@ h4.about {
 h5.about {
   font-family: "Lato";
   text-align: center;
-  font-size: 1.50rem;
+  font-size: 1.5rem;
   font-weight: bold;
   margin: 0.5rem;
 }
@@ -82,7 +82,7 @@ h5.proficiecy {
   font-family: "Lato";
   align-self: left;
   margin: 0.5rem;
-  font-size: 1rem;
+  font-size: 1.5rem;
   text-decoration: underline;
 }
 
@@ -161,4 +161,21 @@ img.project {
   height: auto;
   width: 18rem;
   margin: 1rem;
+}
+
+h5.name {
+  font-family: "Lato";
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0.25rem;
+  text-decoration: underline;
+}
+
+p.description {
+  font-family: "Source Sans Pro";
+  text-align: center;
+  font-size: 1rem;
+  max-width: 50rem;
+  margin: 0.25rem
 }
