@@ -135,6 +135,8 @@ h4.projects {
   display: flex;
   justify-content: center;
   flex-flow: wrap;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
 }
 
 .project-container-b {
@@ -143,10 +145,20 @@ h4.projects {
   display: flex;
   justify-content: center;
   flex-flow: wrap;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
 }
 
 .project {
   padding: 5px;
   margin-top: auto;
   margin-bottom: auto;
+}
+
+img.project {
+  border-radius: 2rem;
+  border: 2px solid black;
+  height: auto;
+  width: 18rem;
+  margin: 1rem;
 }
