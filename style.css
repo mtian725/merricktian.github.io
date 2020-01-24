@@ -82,7 +82,6 @@ h5.proficiecy {
   font-family: "Lato";
   align-self: left;
   margin: 0.5rem;
-  padding: 0.5rem;
   font-size: 1rem;
   text-decoration: underline;
 }
@@ -92,6 +91,8 @@ h5.proficiecy {
   background-color: #f0f0f0;
   border-radius: 8px;
   margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .skill-container {
@@ -108,5 +109,30 @@ h5.proficiecy {
   background-color: #ff9766;
   padding-left: 1rem;
   padding-right: 1rem;
+  margin: 0.25rem 0.5rem 0.25rem 0.5rem;
+}
+
+h4.projects {
+  font-family: "Lato";
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
   margin: 1rem;
+  margin-bottom: 0;
+  padding: 0.5rem;
+}
+
+.projects-container {
+  max-width: 70rem;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.project-container {
+
+}
+
+.project {
+
 }
