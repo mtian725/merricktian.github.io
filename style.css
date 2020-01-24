@@ -4,6 +4,7 @@ body.index {
 }
 
 .home-banner {
+  border-width: 2px;
   border-color: white;
 }
 
