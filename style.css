@@ -1,6 +1,7 @@
 
 h1.title {
+  font-family: "Open Sans";
   text-align: center;
-  background-color: purple; <!-- Change this to an image and eventually and animated image -->
+  background-color: purple; /* Change this to an image and eventually and animated image */
   color: white;
 }
