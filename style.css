@@ -1,4 +1,8 @@
 
+body.index {
+  margin: 0; /* make sure this doenst go horribly wrong later on */
+}
+
 .banner {
   display: flex;
   justify-content: center;
@@ -48,6 +52,7 @@ p.about {
   font-family: "Source Sans Pro";
   text-align: center;
   font-size: 1rem;
+  max-width: 15rem;
 }
 
 img.profile {
@@ -56,4 +61,9 @@ img.profile {
   height: auto;
   width: 14rem;
   margin: 1rem;
+}
+
+.split {
+  height: 1px;
+  background-color: gray;
 }
