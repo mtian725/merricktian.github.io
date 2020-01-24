@@ -11,6 +11,8 @@ body.index {
 
 .name {
   padding: 5px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 h1.title {
@@ -19,7 +21,7 @@ h1.title {
   color: white;
   font-size: 5rem;
   font-weight: 300;
-  margin-top: 5px;
+  margin: 5px;
 }
 
 h3.subtitle {
@@ -28,7 +30,7 @@ h3.subtitle {
   color: white;
   font-size: 2rem;
   font-weight: 100;
-  margin-bottom: 5px;
+  margin: 5px;
 }
 
 img.profile {
