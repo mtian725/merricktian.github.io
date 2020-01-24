@@ -1,8 +1,4 @@
 
-body.index {
-  margin: 0; /* make sure this doenst go horribly wrong later on */
-}
-
 .banner {
   display: flex;
   justify-content: center;
@@ -19,7 +15,7 @@ body.index {
 h1.title {
   font-family: "Lato";
   text-align: center;
-  font-size: 6rem;
+  font-size: 5.5rem;
   font-weight: 300;
   margin: 5px;
 }
@@ -27,7 +23,7 @@ h1.title {
 h3.title {
   font-family: "Lato";
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 100;
   margin: 5px;
 }
@@ -35,7 +31,7 @@ h3.title {
 h4.about {
   font-family: "Lato";
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   font-weight: bold;
   margin: 2.5rem;
 }
@@ -43,7 +39,7 @@ h4.about {
 h5.about {
   font-family: "Lato";
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-weight: bold;
   margin: 0.5rem;
 }
@@ -51,7 +47,7 @@ h5.about {
 p.about {
   font-family: "Source Sans Pro";
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   max-width: 50rem;
   margin: auto;
   margin-bottom: 1rem;
