@@ -52,7 +52,9 @@ p.about {
   font-family: "Source Sans Pro";
   text-align: center;
   font-size: 1rem;
-  max-width: 15rem;
+  max-width: 30rem;
+  margin: auto;
+  margin-bottom: 1rem;
 }
 
 img.profile {
@@ -64,6 +66,9 @@ img.profile {
 }
 
 .split {
+  align-self: center;
   height: 1px;
-  background-color: gray;
+  background-color: #bdbdbd;
+  width: 80%
+  margin: auto;
 }
