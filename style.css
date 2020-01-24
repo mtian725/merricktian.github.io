@@ -10,7 +10,7 @@ body.index {
 }
 
 .name {
-  padding: 10px;
+  padding: 5px;
 }
 
 h1.title {
@@ -34,5 +34,6 @@ h3.subtitle {
 }
 
 img.profile {
-  border-radius: 8px
+  border-radius: 8px;
+  padding: 5px;
 }
