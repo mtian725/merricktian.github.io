@@ -107,6 +107,7 @@ h5.proficiecy {
   border: 2px solid black;
   border-radius: 8px;
   background-color: #ff9766;
+  font-weight: bold;
   padding-left: 1rem;
   padding-right: 1rem;
   margin: 0.25rem 0.5rem 0.25rem 0.5rem;
@@ -119,7 +120,6 @@ h4.projects {
   font-weight: bold;
   margin: 1rem;
   margin-bottom: 0;
-  padding: 0.5rem;
 }
 
 .projects-container {
@@ -129,10 +129,24 @@ h4.projects {
   margin-bottom: 1rem;
 }
 
-.project-container {
+.project-container-a {
+  background-color: #7db0ff;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+}
 
+.project-container-b {
+  background-color: #deebff;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
 }
 
 .project {
-
+  padding: 5px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
