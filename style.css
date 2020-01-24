@@ -30,9 +30,9 @@ h3.subtitle {
 
 h4.about {
   text-align: center;
-  font-size: 1.5rem;
-  font-weight: 75;
-  margin: 5px;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 2.5rem;
 }
 
 img.profile {
