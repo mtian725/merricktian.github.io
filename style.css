@@ -28,7 +28,7 @@ h3.title {
   margin: 5px;
 }
 
-h4.heading {
+h4.about {
   font-family: "Lato";
   text-align: center;
   font-size: 2rem;
@@ -62,23 +62,32 @@ img.profile {
 }
 
 .split {
-  align-self: center;
   height: 1px;
   background-color: #bdbdbd;
   width: 90%;
   margin: auto;
 }
 
+h4.skills {
+  font-family: "Lato";
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 1rem;
+  padding: 1;
+}
+
 h5.proficiecy {
   align-self: left;
 }
 
-.skills {
+.skills-container {
   max-width: 60rem;
   background-color: #dedede;
   border-radius: 8px;
+  margin: auto;
 }
 
-.skill {
+.skill-container {
 
 }
