@@ -1,6 +1,10 @@
 
+body.home {
+  background-color: #212F3C;
+}
+
 h1.title {
-  font-family: "Open Sans";
+  font-family: "Lato";
   text-align: center;
   background-color: purple; /* Change this to an image and eventually and animated image */
   color: white;
