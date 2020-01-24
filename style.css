@@ -74,6 +74,7 @@ h4.skills {
   font-size: 2rem;
   font-weight: bold;
   margin: 1rem;
+  margin-bottom: 0;
   padding: 0.5rem;
 }
 
@@ -93,5 +94,14 @@ h5.proficiecy {
 }
 
 .skill-container {
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+}
 
+.skill {
+  max-width: 10rem;
+  border: 2px solid black;
+  background-color: #d6672b;
+  color: white;
 }
