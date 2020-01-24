@@ -74,16 +74,20 @@ h4.skills {
   font-size: 2rem;
   font-weight: bold;
   margin: 1rem;
-  padding: 1;
+  padding: 0.5rem;
 }
 
 h5.proficiecy {
   align-self: left;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  text-decoration: underline;
 }
 
 .skills-container {
-  max-width: 60rem;
-  background-color: #dedede;
+  max-width: 70rem;
+  background-color: #f0f0f0;
   border-radius: 8px;
   margin: auto;
 }
