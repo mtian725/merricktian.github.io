@@ -79,6 +79,7 @@ h4.skills {
 }
 
 h5.proficiecy {
+  font-family: "Lato";
   align-self: left;
   margin: 0.5rem;
   padding: 0.5rem;
@@ -100,8 +101,11 @@ h5.proficiecy {
 }
 
 .skill {
+  font-family: "Source Sans Pro";
   max-width: 10rem;
   border: 2px solid black;
-  background-color: #d6672b;
-  color: white;
+  border-radius: 8px;
+  background-color: #ff9766;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
