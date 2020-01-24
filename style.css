@@ -3,6 +3,10 @@ body.index {
   background-color: #212F3C;
 }
 
+.home-banner {
+  border-color: white;
+}
+
 h1.title {
   font-family: "Lato";
   text-align: center;
