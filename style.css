@@ -123,7 +123,7 @@ h4.projects {
 }
 
 .projects-container {
-  max-width: 70rem;
+  max-width: 60rem;
   margin: auto;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -151,13 +151,12 @@ h4.projects {
 
 .project {
   padding: 5px;
-  margin-top: auto;
+  margin-top: 1rem;
   margin-bottom: auto;
 }
 
 img.project {
   border-radius: 2rem;
-  border: 2px solid black;
   height: auto;
   width: 18rem;
   margin: 1rem;
