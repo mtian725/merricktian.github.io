@@ -200,7 +200,7 @@ p.contact {
   font-family: "Source Sans Pro";
   text-align: center;
   font-size: 2rem;
-  margin: 0.25rem
+  margin: 0.5rem
 }
 
 h6.contact {
@@ -208,7 +208,7 @@ h6.contact {
   text-align: center;
   font-size: 1.25rem;
   font-weight: bold;
-  margin: 0.25rem;
+  margin: 1rem;
 }
 
 /* use :active and :hover */
