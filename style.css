@@ -146,6 +146,7 @@ h4.header {
   margin-bottom: auto;
 }
 
+/* currently not using but will use when have proper logos for projects */
 img.project {
   border-radius: 2rem;
   height: auto;
