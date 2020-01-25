@@ -113,13 +113,13 @@ h5.proficiecy {
   margin: 0.25rem 0.5rem 0.25rem 0.5rem;
 }
 
-h4.projects {
+h4.header {
   font-family: "Lato";
   text-align: center;
   font-size: 2rem;
   font-weight: bold;
   margin: 1rem;
-  margin-bottom: 0;
+  margin-bottom: 1rem;
 }
 
 .projects-container {
@@ -188,7 +188,7 @@ p.description {
   justify-content: center;
 }
 
-.contact {
+.contact-info {
   display: flex;
   justify-content: center;
   flex-flow: wrap;
