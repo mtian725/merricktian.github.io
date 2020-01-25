@@ -68,16 +68,6 @@ img.profile {
   margin: auto;
 }
 
-h4.skills {
-  font-family: "Lato";
-  text-align: center;
-  font-size: 2rem;
-  font-weight: bold;
-  margin: 1rem;
-  margin-bottom: 0;
-  padding: 0.5rem;
-}
-
 h5.proficiecy {
   font-family: "Lato";
   align-self: left;
@@ -93,6 +83,7 @@ h5.proficiecy {
   margin: auto;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  padding: 1rem;
 }
 
 .skill-container {
