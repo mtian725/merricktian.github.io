@@ -161,12 +161,13 @@ img.project {
   width: 12rem;
   height: 12rem;
   border-radius: 2rem;
+  margin: 1rem;
+  text-align: center;
 }
 
-/* class if the image is smaller than 12rem x 12rem */
-img.small-project {
-  margin: auto;
+#git-project-logo {
   border-radius: 2rem;
+  margin: 2rem auto;
 }
 
 h5.name {
