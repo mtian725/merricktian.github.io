@@ -179,14 +179,6 @@ p.description {
   margin: 0.25rem
 }
 
-h6.contact {
-  font-family: "Source Sans Pro";
-  text-align: center;
-  font-size: 1.25rem;
-  font-weight: bold;
-  margin: 0.25rem;
-}
-
 .contact-container {
   max-width: 40rem;
   margin: auto;
@@ -202,15 +194,22 @@ h6.contact {
   display: flex;
   justify-content: center;
   flex-flow: wrap;
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
+  margin: 0.25rem;
 }
 
 p.contact {
   font-family: "Source Sans Pro";
   text-align: center;
-  font-size: 1rem;
+  font-size: 2rem;
   margin: 0.25rem
+}
+
+h6.contact {
+  font-family: "Source Sans Pro";
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 0.25rem;
 }
 
 /* use :active and :hover */
