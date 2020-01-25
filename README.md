@@ -1,7 +1,6 @@
 Repository for my personal website. Hosted with **gethubpages**.
 
-Things to do:
-
+Things to do: <br />
 -Add FIRE Project (add Unity to list)
 
 -Consider icons for the hyperlinks at the top banner
