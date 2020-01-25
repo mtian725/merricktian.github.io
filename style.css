@@ -190,7 +190,6 @@ p.description {
 }
 
 .contact {
-  background-color: #7db0ff;
   display: flex;
   justify-content: center;
   flex-flow: wrap;
@@ -214,5 +213,6 @@ h6.contact {
 
 /* use :active and :hover */
 img.icon {
-
+  width: 2rem;
+  height: auto;
 }
