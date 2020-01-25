@@ -178,3 +178,30 @@ p.description {
   max-width: 30rem;
   margin: 0.25rem
 }
+
+h6.contact {
+  font-family: "Source Sans Pro";
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 0.25rem;
+}
+
+.contact-container {
+  max-width: 40rem;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+}
+
+.contact {
+
+}
+
+/* use :active and :hover */
+img.icon {
+
+}
