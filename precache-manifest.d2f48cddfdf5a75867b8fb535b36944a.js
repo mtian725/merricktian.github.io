@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9b431706693b69a2224de328236746b8",
+    "revision": "8b9010248cd756a743f3540e5eaba8ea",
     "url": "/index.html"
   },
   {
-    "revision": "730730255d72a0f0bbf8",
-    "url": "/static/css/main.a3c7a159.chunk.css"
+    "revision": "b84352a9dbfbdc561c43",
+    "url": "/static/css/main.dd2216f6.chunk.css"
   },
   {
     "revision": "0fabb2cfe584da21b0d0",
@@ -16,12 +16,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.0300dd18.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "730730255d72a0f0bbf8",
-    "url": "/static/js/main.39948ec3.chunk.js"
+    "revision": "b84352a9dbfbdc561c43",
+    "url": "/static/js/main.d734ee95.chunk.js"
   },
   {
     "revision": "a2cac1ad4e28b6f607b3",
     "url": "/static/js/runtime-main.870e0a81.js"
+  },
+  {
+    "revision": "c5d69473bb006ee0f8aa9165d63d54c6",
+    "url": "/static/media/MerrickTianResume.c5d69473.pdf"
   },
   {
     "revision": "c814078f80db5f48592ac1a0e93f6f63",
