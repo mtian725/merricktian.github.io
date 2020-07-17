@@ -1,5 +1,6 @@
 body {
   background-color: #282c34;
+  font-family: "Lato";
 }
 
 .App {
@@ -26,7 +27,6 @@ body {
 }
 
 h1.title {
-  font-family: "Lato";
   text-align: center;
   font-size: 5.5rem;
   font-weight: 300;
@@ -35,7 +35,6 @@ h1.title {
 }
 
 h3.title {
-  font-family: "Lato";
   text-align: center;
   font-size: 2.5rem;
   font-weight: 100;
@@ -44,7 +43,6 @@ h3.title {
 }
 
 h4.portfolio {
-  font-family: "Lato";
   font-size: 2rem;
   font-weight: bold;
   margin: 0.5rem;
@@ -82,17 +80,14 @@ a.url:link, a.url:visited {
 }
 
 h3.label {
-  font-family: "Lato";
   text-align: center;
   font-size: 2.5rem;
   font-weight: 120;
   margin: 5px;
   opacity: 0;
-  text-decoration: underline;
 }
 
 p.about {
-  font-family: "Lato";
   text-align: left;
   font-size: 1.5rem;
   width: 70vw;
@@ -111,7 +106,6 @@ p.about {
 }
 
 h5.skill-title {
-  font-family: "Lato";
   font-size: 1.75rem;
   font-weight: bold;
   width: 70vw;
@@ -121,13 +115,12 @@ h5.skill-title {
 }
 
 p.skill {
-  font-family: "Lato";
   text-align: center;
   font-size: 1.5rem;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
   opacity: 0;
   color: black;
   padding: 1rem;
@@ -135,7 +128,6 @@ p.skill {
 }
 
 h4.contact {
-  font-family: "Lato";
   font-size: 1.75rem;
   font-weight: normal;
   margin: 0.5rem;
@@ -143,7 +135,6 @@ h4.contact {
 }
 
 h5.experience-title {
-  font-family: "Lato";
   font-size: 1.75rem;
   font-weight: bold;
   width: 57.5%;
@@ -154,13 +145,11 @@ h5.experience-title {
 }
 
 h5.experience-year {
-  font-family: "Lato";
   font-size: 1.75rem;
   font-weight: bold;
   width: 35%;
   text-align: right;
   margin: 1.5rem 0.5rem 1.5rem 0.5rem;
-  text-decoration: underline;
   color: black;
 }
 
@@ -174,7 +163,6 @@ h5.experience-year {
 }
 
 p.experience {
-  font-family: "Lato";
   width: 100%;
   text-align: left;
   font-size: 1.5rem;
@@ -187,7 +175,6 @@ p.experience {
 }
 
 h5.project {
-  font-family: "Lato";
   font-size: 1.75rem;
   font-weight: bold;
   text-align: left;
