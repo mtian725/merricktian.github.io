@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/merricktian.github.io/static/css/main.a3c7a159.chunk.css",
+    "main.js": "/merricktian.github.io/static/js/main.6e08aed4.chunk.js",
+    "main.js.map": "/merricktian.github.io/static/js/main.6e08aed4.chunk.js.map",
+    "runtime-main.js": "/merricktian.github.io/static/js/runtime-main.a090da7e.js",
+    "runtime-main.js.map": "/merricktian.github.io/static/js/runtime-main.a090da7e.js.map",
+    "static/js/2.0300dd18.chunk.js": "/merricktian.github.io/static/js/2.0300dd18.chunk.js",
+    "static/js/2.0300dd18.chunk.js.map": "/merricktian.github.io/static/js/2.0300dd18.chunk.js.map",
+    "index.html": "/merricktian.github.io/index.html",
+    "precache-manifest.27dbca9d659c091d204957e7c5a2c3fb.js": "/merricktian.github.io/precache-manifest.27dbca9d659c091d204957e7c5a2c3fb.js",
+    "service-worker.js": "/merricktian.github.io/service-worker.js",
+    "static/css/main.a3c7a159.chunk.css.map": "/merricktian.github.io/static/css/main.a3c7a159.chunk.css.map",
+    "static/js/2.0300dd18.chunk.js.LICENSE.txt": "/merricktian.github.io/static/js/2.0300dd18.chunk.js.LICENSE.txt",
+    "static/media/headshot.png": "/merricktian.github.io/static/media/headshot.c814078f.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a090da7e.js",
+    "static/js/2.0300dd18.chunk.js",
+    "static/css/main.a3c7a159.chunk.css",
+    "static/js/main.6e08aed4.chunk.js"
+  ]
+}
