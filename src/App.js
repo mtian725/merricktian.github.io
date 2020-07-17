@@ -325,6 +325,11 @@ class App extends React.Component {
             style={{backgroundColor: "#59ff96"}}
             ref={p => this.skillsRef.push(p)}
           >AR/VR</p>
+          <p
+            className="skill"
+            style={{backgroundColor: "#59ff96"}}
+            ref={p => this.skillsRef.push(p)}
+          >Heroku</p>
         </div>
         <br />
       </div>
@@ -364,11 +369,11 @@ class App extends React.Component {
               <br />
               <br />
               {
-                "TOOLS USED: JavaScript, React, Visual Studio"
+                "Tools Used: JavaScript, React, Visual Studio"
               }
               <br />
               {
-                "WEBSITE: "
+                "Website: "
               }
               <a className="url" href="https://www.cmind-ai.com/">
                 {"https://www.cmind-ai.com/"}
@@ -411,11 +416,11 @@ class App extends React.Component {
               <br />
               <br />
               {
-                "TOOLS USED: C#, Unity, ARCore"
+                "Tools Used: C#, Unity, ARCore"
               }
               <br />
               {
-                "WEBSITE: "
+                "Website: "
               }
               <a className="url" href="https://www.fire.umd.edu/pvc">
                 {"https://www.fire.umd.edu/pvc"}
@@ -454,7 +459,7 @@ class App extends React.Component {
               <br />
               <br />
               {
-                "TOOLS USED: GSAP, JavaScript, React"
+                "Tools Used: GSAP, JavaScript, React"
               }
               <br />
               {
@@ -465,7 +470,7 @@ class App extends React.Component {
               </a>
               <br />
               {
-                "WEBSITE: "
+                "Website: "
               }
               <a className="url" href="https://mtian725.github.io/Cake-Animations/">
                 {"https://mtian725.github.io/Cake-Animations/"}
@@ -486,12 +491,13 @@ class App extends React.Component {
             <p className="experience">
               {
                 "A series of project geared toward helping my friend learn the \
-                fundamentals of python."
+                fundamentals of python. Topics include but not limited to \
+                arrays, recursion, functions and object-oriented progrogramming."
               }
               <br />
               <br />
               {
-                "TOOLS USED: Python"
+                "Tools Used: Python"
               }
               <br />
               {
@@ -516,12 +522,13 @@ class App extends React.Component {
             <p className="experience">
               {
                 "Simple functional calculator with the goal of practicing \
-                React."
+                React. Specifically, I sought to practice working with stateful \
+                and stateless components."
               }
               <br />
               <br />
               {
-                "TOOLS USED: JavaScript, React"
+                "Tools Used: JavaScript, React"
               }
               <br />
               {
@@ -532,7 +539,7 @@ class App extends React.Component {
               </a>
               <br />
               {
-                "WEBSITE: "
+                "Website: "
               }
               <a className="url" href="https://mtian725.github.io/BasicCalculator/">
                 {"https://mtian725.github.io/BasicCalculator/"}
@@ -552,12 +559,13 @@ class App extends React.Component {
           <div className="experience-box">
             <p className="experience">
               {
-                "Personal website designed to be a portfolio."
+                "Personal website designed to be a portfolio. I will continue \
+                to update it as time pass."
               }
               <br />
               <br />
               {
-                "TOOLS USED: JavaScript, React, GSAP"
+                "Tools Used: JavaScript, React, GSAP"
               }
               <br />
               {
@@ -568,7 +576,7 @@ class App extends React.Component {
               </a>
               <br />
               {
-                "WEBSITE: "
+                "Website: "
               }
               <a className="url" href="https://merricktian.me/">
                 {"https://merricktian.me/"}
@@ -590,12 +598,13 @@ class App extends React.Component {
           <div className="experience-box">
             <p className="experience">
               {
-                "Discord bot geared toward Granblue Fantasy for personal use."
+                "Discord bot geared toward Granblue Fantasy for personal use. \
+                The bot is currently being hosted by Heroku."
               }
               <br />
               <br />
               {
-                "TOOLS USED: Python"
+                "Tools Used: Python, Heroku"
               }
               <br />
               {
