@@ -64,6 +64,14 @@ a.url:link, a.url:visited {
   color: black
 }
 
+a.url:hover, a.url:active {
+  color: #ea00ff;
+}
+
+a.url {
+  margin: 1rem;
+}
+
 .flex-center-wrap-container {
   display: flex;
   justify-content: center;
@@ -140,7 +148,6 @@ h5.experience-title {
   width: 57.5%;
   text-align: left;
   margin: 1.5rem 1rem 1.5rem 1rem;
-  text-decoration: underline;
   color: black;
 }
 
@@ -179,7 +186,6 @@ h5.project {
   font-weight: bold;
   text-align: left;
   margin: 1.5rem 1rem 1.5rem 1rem;
-  text-decoration: underline;
   color: black;
 }
 

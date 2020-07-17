@@ -5,6 +5,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
+// Assume width of 1200px and scale down
+
 class App extends React.Component {
   constructor(props){
     super(props)
@@ -372,11 +374,8 @@ class App extends React.Component {
                 "Tools Used: JavaScript, React, Visual Studio"
               }
               <br />
-              {
-                "Website: "
-              }
               <a className="url" href="https://www.cmind-ai.com/">
-                {"https://www.cmind-ai.com/"}
+                {"Website"}
               </a>
             </p>
           </div>
@@ -419,11 +418,8 @@ class App extends React.Component {
                 "Tools Used: C#, Unity, ARCore"
               }
               <br />
-              {
-                "Website: "
-              }
               <a className="url" href="https://www.fire.umd.edu/pvc">
-                {"https://www.fire.umd.edu/pvc"}
+                {"Website"}
               </a>
             </p>
           </div>
@@ -462,18 +458,11 @@ class App extends React.Component {
                 "Tools Used: GSAP, JavaScript, React"
               }
               <br />
-              {
-                "GitHub: "
-              }
               <a className="url" href="https://github.com/mtian725/Cake-Animations">
-                {"https://github.com/mtian725/Cake-Animations"}
+                {"GitHub"}
               </a>
-              <br />
-              {
-                "Website: "
-              }
               <a className="url" href="https://mtian725.github.io/Cake-Animations/">
-                {"https://mtian725.github.io/Cake-Animations/"}
+                {"Website"}
               </a>
             </p>
           </div>
@@ -500,11 +489,8 @@ class App extends React.Component {
                 "Tools Used: Python"
               }
               <br />
-              {
-                "GitHub: "
-              }
               <a className="url" href="https://github.com/mtian725/PythonProjects">
-                {"https://github.com/mtian725/PythonProjects"}
+                {"GitHub"}
               </a>
             </p>
           </div>
@@ -531,18 +517,11 @@ class App extends React.Component {
                 "Tools Used: JavaScript, React"
               }
               <br />
-              {
-                "GitHub: "
-              }
               <a className="url" href="https://github.com/mtian725/BasicCalculator">
-                {"https://github.com/mtian725/BasicCalculator"}
+                {"GitHub"}
               </a>
-              <br />
-              {
-                "Website: "
-              }
               <a className="url" href="https://mtian725.github.io/BasicCalculator/">
-                {"https://mtian725.github.io/BasicCalculator/"}
+                {"Website"}
               </a>
             </p>
           </div>
@@ -568,18 +547,11 @@ class App extends React.Component {
                 "Tools Used: JavaScript, React, GSAP"
               }
               <br />
-              {
-                "GitHub: "
-              }
               <a className="url" href="https://github.com/mtian725/merricktian.github.io">
-                {"https://github.com/mtian725/merricktian.github.io"}
+                {"GitHub"}
               </a>
-              <br />
-              {
-                "Website: "
-              }
               <a className="url" href="https://merricktian.me/">
-                {"https://merricktian.me/"}
+                {"Website"}
               </a>
             </p>
           </div>
@@ -607,11 +579,8 @@ class App extends React.Component {
                 "Tools Used: Python, Heroku"
               }
               <br />
-              {
-                "GitHub: "
-              }
               <a className="url" href="https://github.com/mtian725/Sierokarte-Bot">
-                {"https://github.com/mtian725/Sierokarte-Bot"}
+                {"GitHub"}
               </a>
             </p>
           </div>
