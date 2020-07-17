@@ -22,7 +22,10 @@ class App extends React.Component {
     this.experienceTl = null;
 
     this.projectRef = [];
-    this.projectRef = null;
+    this.projectTl = null;
+
+    this.contactRef = [];
+    this.contactTl = null;
   }
 
   componentDidMount () {
@@ -69,6 +72,53 @@ class App extends React.Component {
         amount: 2,
       }
     }, 0);
+
+    this.experienceTl = gsap.timeline({
+     scrollTrigger: {
+       trigger: this.experienceRef,
+       start: "top 75%",
+       end: "bottom 0%",
+     }
+    });
+    this.experienceTl.to(this.experienceRef, {
+      duration: 2,
+      ease: "power3.out",
+      autoAlpha: 1,
+      y: -100,
+      stagger: {
+        amount: 0.5, //change number when add more
+      }
+    }, 0);
+
+    this.projectTl = gsap.timeline({
+     scrollTrigger: {
+       trigger: this.projectRef,
+       start: "top 75%",
+       end: "bottom 0%",
+     }
+    });
+    this.projectTl.to(this.projectRef, {
+      duration: 2,
+      ease: "power3.out",
+      autoAlpha: 1,
+      y: -100,
+      stagger: {
+        amount: 2,
+      }
+    }, 0);
+
+    this.contactTl = gsap.timeline({
+     scrollTrigger: {
+       trigger: this.contactRef,
+     }
+    });
+    this.contactTl.to(this.contactRef, {
+      duration: 2,
+      ease: "power3.out",
+      autoAlpha: 1,
+      y: -100,
+    }, 0);
+
   }
 
   render () {
@@ -105,7 +155,7 @@ class App extends React.Component {
             className="portfolio"
             ref={h4 => this.titleRefs.push(h4)}
           >
-            <a className="portfolio" href="../images/MerrickTianResume.pdf">Resume</a>
+            <a className="portfolio" href={require("./images/MerrickTianResume.pdf")}>Resume</a>
           </h4>
         </div>
       </div>
@@ -143,7 +193,7 @@ class App extends React.Component {
           className="skill-title"
           ref={h5 => this.skillsRef.push(h5)}
         >CORE</h5>
-        <div className="skill-container">
+        <div className="sub-container">
           <p
             className="skill"
             style={{backgroundColor: "#eb85ff"}}
@@ -175,7 +225,7 @@ class App extends React.Component {
           className="skill-title"
           ref={h5 => this.skillsRef.push(h5)}
         >WEB DEVELOPMENT</h5>
-        <div className="skill-container">
+        <div className="sub-container">
           <p
             className="skill"
             style={{backgroundColor: "#8b85ff"}}
@@ -207,7 +257,7 @@ class App extends React.Component {
           className="skill-title"
           ref={h5 => this.skillsRef.push(h5)}
         >EDUCATION</h5>
-        <div className="skill-container">
+        <div className="sub-container">
           <p
             className="skill"
             style={{backgroundColor: "#59fcff"}}
@@ -244,7 +294,7 @@ class App extends React.Component {
           className="skill-title"
           ref={h5 => this.skillsRef.push(h5)}
         >OTHER</h5>
-        <div className="skill-container">
+        <div className="sub-container">
           <p
             className="skill"
             style={{backgroundColor: "#59ff96"}}
@@ -281,11 +331,300 @@ class App extends React.Component {
     )
     const experience = (
       <div>
+        <h3
+          className="label"
+          ref={h3 => this.experienceRef.push(h3)}
+        >Professional Experience</h3>
+        <br />
+        <div
+          className="sub-container"
+          style={{backgroundColor:"#f4bdff",
+            opacity: "0",
+            borderTopLeftRadius: "2rem",
+            borderTopRightRadius: "2rem"}}
+          ref={div => this.experienceRef.push(div)}
+        >
+          <h5
+            className="experience-title"
+          >Web Development Intern at Cmind Inc</h5>
+          <h5
+            className="experience-year"
+          >Jun 2020 - Aug 2020</h5>
+          <div className="experience-box">
+            <p className="experience">
+              {
+                "Worked independently to visualize the data compiled by \
+                collegues onto the web product."
+              }
+              <br />
+              {
+                "Was responsible for quickly updating the web product as \
+                development approached the early stages of public distribution"
+              }
+              <br />
+              <br />
+              {
+                "TOOLS USED: JavaScript, React, Visual Studio"
+              }
+              <br />
+              {
+                "WEBSITE: "
+              }
+              <a className="url" href="https://www.cmind-ai.com/">
+                {"https://www.cmind-ai.com/"}
+              </a>
+            </p>
+          </div>
+        </div>
+        <div
+          className="sub-container"
+          style={{backgroundColor:"#c0bdff",
+            opacity: "0",
+            borderBottomLeftRadius: "2rem",
+            borderBottomRightRadius: "2rem"}}
+          ref={div => this.experienceRef.push(div)}
+        >
+          <h5
+            className="experience-title"
+          >Student Researcher at FIRE: Phillips Virtual Culture</h5>
+          <h5
+            className="experience-year"
+          >Sept 2018 - Dec 2019</h5>
+          <div className="experience-box">
+            <p className="experience">
+              {
+                "Explored and researched the application of augmented reality \
+                and virtual reality, specifically in a museum setting."
+              }
+              <br />
+              {
+                "Sought to determine whether or not augmented reality can draw \
+                interest outside of a museum setting by leveraging the \
+                creative potential."
+              }
+              <br />
+              {
+                "Was invited and took part in the Summer Research Fellowship \
+                Program, where I worked closely with my advisor and peers to \
+                develop my project."
+              }
+              <br />
+              <br />
+              {
+                "TOOLS USED: C#, Unity, ARCore"
+              }
+              <br />
+              {
+                "WEBSITE: "
+              }
+              <a className="url" href="https://www.fire.umd.edu/pvc">
+                {"https://www.fire.umd.edu/pvc"}
+              </a>
+            </p>
+          </div>
+        </div>
         <br />
       </div>
     );
     const projects = (
       <div>
+        <h3
+          className="label"
+          ref={h3 => this.projectRef.push(h3)}
+        >Personal Projects</h3>
+        <br />
+        <br />
+        <div
+          className="sub-container"
+          style={{backgroundColor:"#f4bdff",
+            opacity: "0",
+            borderTopLeftRadius: "2rem",
+            borderTopRightRadius: "2rem"}}
+          ref={div => this.projectRef.push(div)}
+        >
+          <h5
+            className="project"
+          >Cake Animations</h5>
+          <div className="experience-box">
+            <p className="experience">
+              {
+                "Project with the goal of exploring, learning, and practicing \
+                GSAP and animating web elements."
+              }
+              <br />
+              <br />
+              {
+                "TOOLS USED: GSAP, JavaScript, React"
+              }
+              <br />
+              {
+                "GitHub: "
+              }
+              <a className="url" href="https://github.com/mtian725/Cake-Animations">
+                {"https://github.com/mtian725/Cake-Animations"}
+              </a>
+              <br />
+              {
+                "WEBSITE: "
+              }
+              <a className="url" href="https://mtian725.github.io/Cake-Animations/">
+                {"https://mtian725.github.io/Cake-Animations/"}
+              </a>
+            </p>
+          </div>
+        </div>
+        <div
+          className="sub-container"
+          style={{backgroundColor:"#c0bdff",
+            opacity: "0"}}
+          ref={div => this.projectRef.push(div)}
+        >
+          <h5
+            className="project"
+          >PythonProjects</h5>
+          <div className="experience-box">
+            <p className="experience">
+              {
+                "A series of project geared toward helping my friend learn the \
+                fundamentals of python."
+              }
+              <br />
+              <br />
+              {
+                "TOOLS USED: Python"
+              }
+              <br />
+              {
+                "GitHub: "
+              }
+              <a className="url" href="https://github.com/mtian725/PythonProjects">
+                {"https://github.com/mtian725/PythonProjects"}
+              </a>
+            </p>
+          </div>
+        </div>
+        <div
+          className="sub-container"
+          style={{backgroundColor:"#a4fbfc",
+            opacity: "0"}}
+          ref={div => this.projectRef.push(div)}
+        >
+          <h5
+            className="project"
+          >BasicCalculator</h5>
+          <div className="experience-box">
+            <p className="experience">
+              {
+                "Simple functional calculator with the goal of practicing \
+                React."
+              }
+              <br />
+              <br />
+              {
+                "TOOLS USED: JavaScript, React"
+              }
+              <br />
+              {
+                "GitHub: "
+              }
+              <a className="url" href="https://github.com/mtian725/BasicCalculator">
+                {"https://github.com/mtian725/BasicCalculator"}
+              </a>
+              <br />
+              {
+                "WEBSITE: "
+              }
+              <a className="url" href="https://mtian725.github.io/BasicCalculator/">
+                {"https://mtian725.github.io/BasicCalculator/"}
+              </a>
+            </p>
+          </div>
+        </div>
+        <div
+          className="sub-container"
+          style={{backgroundColor:"#a6ffc7",
+            opacity: "0"}}
+          ref={div => this.projectRef.push(div)}
+        >
+          <h5
+            className="project"
+          >Personal Website</h5>
+          <div className="experience-box">
+            <p className="experience">
+              {
+                "Personal website designed to be a portfolio."
+              }
+              <br />
+              <br />
+              {
+                "TOOLS USED: JavaScript, React, GSAP"
+              }
+              <br />
+              {
+                "GitHub: "
+              }
+              <a className="url" href="https://github.com/mtian725/merricktian.github.io">
+                {"https://github.com/mtian725/merricktian.github.io"}
+              </a>
+              <br />
+              {
+                "WEBSITE: "
+              }
+              <a className="url" href="https://merricktian.me/">
+                {"https://merricktian.me/"}
+              </a>
+            </p>
+          </div>
+        </div>
+        <div
+          className="sub-container"
+          style={{backgroundColor:"#f4bdff",
+            opacity: "0",
+            borderBottomLeftRadius: "2rem",
+            borderBottomRightRadius: "2rem"}}
+          ref={div => this.projectRef.push(div)}
+        >
+          <h5
+            className="project"
+          >Sierokarte Bot</h5>
+          <div className="experience-box">
+            <p className="experience">
+              {
+                "Discord bot geared toward Granblue Fantasy for personal use."
+              }
+              <br />
+              <br />
+              {
+                "TOOLS USED: Python"
+              }
+              <br />
+              {
+                "GitHub: "
+              }
+              <a className="url" href="https://github.com/mtian725/Sierokarte-Bot">
+                {"https://github.com/mtian725/Sierokarte-Bot"}
+              </a>
+            </p>
+          </div>
+        </div>
+        <br />
+      </div>
+    );
+    const contact = (
+      <div>
+        <h3
+          className="label"
+          ref={h3 => this.contactRef.push(h3)}
+        >Contact Me</h3>
+        <h4
+          className="contact"
+          ref={h4 => this.contactRef.push(h4)}
+        >mtian725@gmail.com</h4>
+        <h4
+          className="contact"
+          ref={h4 => this.contactRef.push(h4)}
+        >(781)-666-1315</h4>
+        <br />
         <br />
       </div>
     );
@@ -306,6 +645,9 @@ class App extends React.Component {
         </div>
         <div className="container">
           {projects}
+        </div>
+        <div className="container">
+          {contact}
         </div>
       </div>
     );
