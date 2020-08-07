@@ -34,11 +34,11 @@ class App extends React.Component {
     // Timeline for title
     this.titleTl.to(this.titleRefs, {
       ease: "power3.out",
-      duration: 2,
+      duration: 1,
       autoAlpha: 1,
       y: -75,
       stagger: {
-        each: 0.3,
+        each: 0.2,
         from: 'top',
         grid: 'auto',
       }
@@ -52,7 +52,7 @@ class App extends React.Component {
      }
     });
     this.aboutTl.to(this.aboutRef, {
-      duration: 2,
+      duration: 1,
       ease: "power3.out",
       autoAlpha: 1,
       y: -100,
@@ -66,12 +66,12 @@ class App extends React.Component {
      }
     });
     this.skillsTl.to(this.skillsRef, {
-      duration: 2,
+      duration: 1,
       ease: "power3.out",
       autoAlpha: 1,
       y: -100,
       stagger: {
-        amount: 2,
+        amount: 1,
       }
     }, 0);
 
@@ -83,7 +83,7 @@ class App extends React.Component {
      }
     });
     this.experienceTl.to(this.experienceRef, {
-      duration: 2,
+      duration: 1,
       ease: "power3.out",
       autoAlpha: 1,
       y: -100,
@@ -100,12 +100,12 @@ class App extends React.Component {
      }
     });
     this.projectTl.to(this.projectRef, {
-      duration: 2,
+      duration: 1,
       ease: "power3.out",
       autoAlpha: 1,
       y: -100,
       stagger: {
-        amount: 2,
+        amount: 1,
       }
     }, 0);
 
@@ -115,7 +115,7 @@ class App extends React.Component {
      }
     });
     this.contactTl.to(this.contactRef, {
-      duration: 2,
+      duration: 1,
       ease: "power3.out",
       autoAlpha: 1,
       y: -100,
@@ -176,8 +176,8 @@ class App extends React.Component {
           {
             "I am a third-year student at the University of Maryland, persuing a\
             Bachelor's Degree in Computer Science. I am also persuing a minor in\
-            Classical Mythology. Currently, I am pursuing to be a full stack\
-            developer, but I also have some interest in software engineering."
+            Classical Mythology. Currently, I am pursuing the path a full stack\
+            engineer, but I also have some interest in software engineering."
             // possibly add more text
           }
         </p>
@@ -360,13 +360,12 @@ class App extends React.Component {
           <div className="experience-box">
             <p className="experience">
               {
-                "Worked independently to visualize the data compiled by \
-                collegues onto the web product."
-              }
-              <br />
-              {
-                "Was responsible for quickly updating the web product as \
-                development approached the early stages of public distribution"
+                "I created a visually appealing and a dynamic web product \
+                 through close collaboration and visualization of compiled \
+                 financial and risk score data. I was also responsible for \
+                 updating the web product as development advanced through \
+                 early stages of public distribution. I am responsible for \
+                 several features currently available on the web product."
               }
               <br />
               <br />
@@ -393,24 +392,18 @@ class App extends React.Component {
           >Student Researcher at FIRE: Phillips Virtual Culture</h5>
           <h5
             className="experience-year"
-          >Sept 2018 - Dec 2019</h5>
+          >Aug 2018 - Dec 2019</h5>
           <div className="experience-box">
             <p className="experience">
               {
-                "Explored and researched the application of augmented reality \
-                and virtual reality, specifically in a museum setting."
-              }
-              <br />
-              {
-                "Sought to determine whether or not augmented reality can draw \
-                interest outside of a museum setting by leveraging the \
-                creative potential."
-              }
-              <br />
-              {
-                "Was invited and took part in the Summer Research Fellowship \
-                Program, where I worked closely with my advisor and peers to \
-                develop my project."
+                "I collaborated with the Phillips Collection to utilize \
+                 augmented reality and virtual reality in order to develop \
+                 innovative ways to explore and learn from museums. I \
+                 Constructed a mobile application that generated an interactive \
+                 gallery, which included videos, art, transcripts, and \
+                 audiotapes. Invited to UMD’s Summer Research Fellowship \
+                 Program, where I worked closely with my advisor and peers \
+                 to further my research."
               }
               <br />
               <br />
@@ -507,9 +500,8 @@ class App extends React.Component {
           <div className="experience-box">
             <p className="experience">
               {
-                "Simple functional calculator with the goal of practicing \
-                React. Specifically, I sought to practice working with stateful \
-                and stateless components."
+                "Simple standard calculator with the goal of practicing \
+                fundamental concepts for React."
               }
               <br />
               <br />
@@ -571,7 +563,7 @@ class App extends React.Component {
             <p className="experience">
               {
                 "Discord bot geared toward Granblue Fantasy for personal use. \
-                The bot is currently being hosted by Heroku."
+                The bot was hosted by Heroku."
               }
               <br />
               <br />
