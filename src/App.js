@@ -351,12 +351,14 @@ class App extends React.Component {
             borderTopRightRadius: "2rem"}}
           ref={div => this.experienceRef.push(div)}
         >
-          <h5
-            className="experience-title"
-          >Web Development Intern at Cmind Inc</h5>
-          <h5
-            className="experience-year"
-          >Jun 2020 - Aug 2020</h5>
+          <div className="title-box">
+            <h5
+              className="experience-title"
+            >Web Development Intern at Cmind Inc</h5>
+            <h5
+              className="experience-year"
+            >Jun 2020 - Aug 2020</h5>
+          </div>
           <div className="experience-box">
             <p className="experience">
               {
@@ -387,16 +389,19 @@ class App extends React.Component {
             borderBottomRightRadius: "2rem"}}
           ref={div => this.experienceRef.push(div)}
         >
-          <h5
-            className="experience-title"
-          >Student Researcher at FIRE: Phillips Virtual Culture</h5>
-          <h5
-            className="experience-year"
-          >Aug 2018 - Dec 2019</h5>
+          <div className="title-box">
+            <h5
+              className="experience-title"
+            >Student Researcher at FIRE</h5>
+            <h5
+              className="experience-year"
+            >Aug 2018 - Dec 2019</h5>
+          </div>
           <div className="experience-box">
             <p className="experience">
               {
-                "I collaborated with the Phillips Collection to utilize \
+                "As a part of the Phillips Virtual Culture research stream, \
+                 I collaborated with the Phillips Collection to utilize \
                  augmented reality and virtual reality in order to develop \
                  innovative ways to explore and learn from museums. I \
                  Constructed a mobile application that generated an interactive \
