@@ -1,57 +1,35 @@
+
 body {
-  background-color: white;
-  font-family: "Lato";
+  background-color: #dedede !important;
+  font-family: "Lato", sans-serif !important;
+  cursor: default;
 }
 
 .Title {
   height: 40rem;
-  background-color: blue;
+  background-color: #282c34;
 }
 
 .Title-Text {
-  font-size: calc(1rem + max(4vh, 4vw));
+  font-size: min(62px, calc(1rem + max(3vh, 3vw)));
   text-align: center;
-}
-
-.Title-Bold {
-  font-weight: bolder;
-}
-
-@-webkit-keyframes blink {
-  0% { opacity: 1; }
-  50% { opacity: 0; }
-  100% { opacity: 1; }
-}
-@-moz-keyframes blink {
-  0% { opacity: 1; }
-  50% { opacity: 0; }
-  100% { opacity: 1; }
-}
-@-o-keyframes blink {
-  0% { opacity: 1; }
-  50% { opacity: 0; }
-  100% { opacity: 1; }
-}
-@keyframes blink {
-  0% { opacity: 1; }
-  50% { opacity: 0; }
-  100% { opacity: 1; }
-}
-
-.Typing {
-  font-weight: normal;
-  opacity: 1;
-  -webkit-animation: blink 1s infinite;
-  -moz-animation:    blink 1s infinite;
-  -o-animation:      blink 1s infinite;
-  animation:         blink 1s infinite;
+  display: none;
+  color: white;
 }
 
 .Icon {
   color: white;
-  font-size: calc(2rem + max(4vh, 4vw));
-  background-color: black;
+  font-size: min(78px, calc(2rem + max(3vh, 3vw)));
   padding: 0.5rem;
+  cursor: pointer;
+}
+
+.Icon-Wrapper {
+  transform: translate(0, calc(2rem + max(3vh, 3vw) + 1rem));
+}
+
+.Icon:hover {
+  color: #de73ff;
 }
 
 .Left {
@@ -60,4 +38,96 @@ body {
 
 .Right {
   border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.Temp-Headshot {
+  border-radius: 50%;
+  border: 0.25rem solid #de73ff;
+  height: calc(12rem + max(4vh, 4vw));
+  max-height: 250px;
+}
+
+.Header {
+  background-color: black;
+  position: sticky;
+  top: 0%;
+  z-index: 1000;
+}
+
+.Header-Item {
+  font-size: min(27px, calc(0.75rem + max(1vh, 1vw)));
+  color: white;
+  cursor: pointer;
+}
+
+.Content-Block {
+  width: calc(40vw + 10rem);
+  margin: auto;
+}
+
+.Content-Title {
+  margin-top: 1rem;
+  max-width: calc(40vw + 10rem);
+  text-align: center;
+  font-size: min(36px, calc(1rem + max(2vh, 2vw)));
+  font-weight: bold;
+}
+
+.Me {
+  font-size: min(22px, calc(0.75rem + max(1vh, 1vw)));
+  text-align: justify;
+}
+
+.Skills {
+  font-size: min(22px, calc(0.75rem + max(1vh, 1vw)));
+}
+
+.Skill-Category {
+  text-align: left;
+}
+
+.Skill {
+  width: max-content;
+  padding: min(22px, calc(0.25rem + max(0.5vh, 0.5vw)));
+  border-radius: 1rem;
+  text-align: center;
+  margin: 0.25rem;
+}
+
+.Contact {
+  text-align: center;
+  font-size: min(27px, calc(0.75rem + max(1vh, 1vw)));
+}
+
+.Image {
+  cursor: pointer;
+  border-radius: 1rem;
+  width: 150px;
+}
+
+.Info {
+  font-size: min(27px, calc(0.75rem + max(1vh, 1vw)));
+  text-align: justify;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-weight: bold;
+}
+
+.Description {
+  margin-top: 0.5rem;
+  font-size: min(27px, calc(0.75rem + max(1vh, 1vw)));
+  text-align: justify;
+}
+
+.Project-Icon {
+  color: black;
+  font-size: min(78px, calc(2rem + max(3vh, 3vw)));
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.Project-Icon:hover {
+  color: #9d00a8;
 }
