@@ -60,6 +60,10 @@ body {
   cursor: pointer;
 }
 
+.Header-Item:hover {
+  color: #de73ff;
+}
+
 .Content-Block {
   width: calc(40vw + 10rem);
   margin: auto;

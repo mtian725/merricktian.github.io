@@ -21,10 +21,10 @@ class App extends React.Component {
     this.iconsRef = [];
     this.greetingTl = gsap.timeline();
 
-    this.componentRef = [null, null, null, null];
-    this.componentPositions = [0, 0, 0, 0];
+    this.componentRef = [null, null, null, null, null, null];
+    this.componentPositions = [0, 0, 0, 0, 0, 0];
 
-    this.scrollTl = null;
+    this.scrollTl = [null, null, null, null, null, null];
 
     this.jumpScrollTl = gsap.timeline();
 
@@ -43,21 +43,6 @@ class App extends React.Component {
         this.componentRef[i].getBoundingClientRect().y -
         this.componentRef[0].getBoundingClientRect().y;
     }
-
-    const self = this;
-    window.addEventListener('scroll', function() {
-      console.log(window.scrollY);
-      console.log(self.componentPositions);
-      if (window.scrollY > self.componentPositions[3] - (window.innerHeight/2)) {
-        self.setState({ selected: 3 });
-      } else if (window.scrollY > self.componentPositions[2] - (window.innerHeight/2)) {
-        self.setState({ selected: 2 });
-      } else if (window.scrollY > self.componentPositions[1] - (window.innerHeight/2)) {
-        self.setState({ selected: 1 });
-      } else {
-        self.setState({ selected: 0 });
-      }
-    });
 
     for (let i=0; i < this.greetingRefOne.length; i++) {
       this.greetingTl.to(this.greetingRefOne[i], {
@@ -78,59 +63,24 @@ class App extends React.Component {
       }, (this.greetingRefOne.length + this.greetingRefTwo.length) * 0.05 + i * 0.2);
     }
 
-    this.scrollTl = gsap.timeline({
-     scrollTrigger: {
-       trigger: this.componentRef[1],
-       start: "top 90%",
-     }
-    });
-    this.scrollTl.fromTo(this.componentRef[1], {
-      opacity: 0,
-      scale: 0.5,
-      y: 100
-    }, {
-      opacity: 1,
-      scale: 1,
-      y: 0,
-      duration: 0.5,
-      ease: "power3.out",
-    });
-
-    this.scrollTl = gsap.timeline({
-     scrollTrigger: {
-       trigger: this.componentRef[2],
-       start: "top 90%",
-     }
-    });
-    this.scrollTl.fromTo(this.componentRef[2], {
-      opacity: 0,
-      scale: 0.5,
-      y: 100
-    }, {
-      opacity: 1,
-      scale: 1,
-      y: 0,
-      duration: 0.5,
-      ease: "power3.out",
-    });
-
-    this.scrollTl = gsap.timeline({
-     scrollTrigger: {
-       trigger: this.componentRef[3],
-       start: "top 90%",
-     }
-    });
-    this.scrollTl.fromTo(this.componentRef[3], {
-      opacity: 0,
-      scale: 0.5,
-      y: 100
-    }, {
-      opacity: 1,
-      scale: 1,
-      y: 0,
-      duration: 0.5,
-      ease: "power3.out",
-    });
+    for (let i = 1; i < this.componentRef.length; i++) {
+      this.scrollTl[i] = gsap.timeline({
+       scrollTrigger: {
+         trigger: this.componentRef[i],
+       }
+      });
+      this.scrollTl[i].fromTo(this.componentRef[i], {
+        opacity: 0,
+        scale: 0.5,
+        y: 100
+      }, {
+        opacity: 1,
+        scale: 1,
+        y: 0,
+        duration: 0.5,
+        ease: "power3.out",
+      });
+    }
   }
 
   triggerTabs (value) {
@@ -208,23 +158,27 @@ class App extends React.Component {
           >
             <div
               className="Header-Item"
-              style={{ color: this.state.selected === 0 ? '#de73ff' : 'white'}}
               onClick={() => this.triggerTabs(0)}
             >HOME</div>
             <div
               className="Header-Item"
-              style={{ color: this.state.selected === 1 ? '#de73ff' : 'white'}}
               onClick={() => this.triggerTabs(1)}
-            >ABOUT</div>
+            >I AM...</div>
             <div
               className="Header-Item"
-              style={{ color: this.state.selected === 2 ? '#de73ff' : 'white'}}
               onClick={() => this.triggerTabs(2)}
+            >SKILLS</div>
+            <div
+              className="Header-Item"
+              onClick={() => this.triggerTabs(3)}
+            >CONTACT</div>
+            <div
+              className="Header-Item"
+              onClick={() => this.triggerTabs(4)}
             >PROFESSIONAL</div>
             <div
               className="Header-Item"
-              style={{ color: this.state.selected === 3 ? '#de73ff' : 'white'}}
-              onClick={() => this.triggerTabs(3)}
+              onClick={() => this.triggerTabs(5)}
             >PERSONAL</div>
           </Container>
         </Container>
@@ -295,14 +249,16 @@ class App extends React.Component {
             </div>
           </Container>
         </div>
-        <div ref={div => this.componentRef[1]=div}>
+        <div>
           <Container
             fluid
             className="d-flex justify-content-center flex-column"
           >
-            <div>
-              <div className="Content-Block Content-Title">
-                I am...
+            <div ref={div => this.componentRef[1]=div}>
+              <div
+                className="Content-Block Content-Title"
+              >
+                <u>I am...</u>
               </div>
               <div className="Content-Block Me">
                 {"...a third-year student at the University of Maryland, \
@@ -312,122 +268,128 @@ class App extends React.Component {
                 engineering."}
               </div>
             </div>
-            <div className="Content-Block Content-Title">
-              Skills
+            <div ref={div => this.componentRef[2]=div}>
+              <div
+                className="Content-Block Content-Title"
+              >
+                <u>Skills</u>
+              </div>
+              <div className="Content-Block Skills">
+                <div>
+                  <div className="Skill-Category"><strong>Core</strong></div>
+                  <div className="d-flex justify-content-around flex-row flex-wrap">
+                    <div
+                      className="Skill"
+                      style={{backgroundColor:"#9999ff"}}
+                    >Python</div>
+                    <div
+                      className="Skill"
+                      style={{backgroundColor:"#9999ff"}}
+                    >Java</div>
+                    <div
+                      className="Skill"
+                      style={{backgroundColor:"#9999ff"}}
+                    >C</div>
+                    <div
+                      className="Skill"
+                      style={{backgroundColor:"#9999ff"}}
+                    >Ruby</div>
+                    <div
+                      className="Skill"
+                      style={{backgroundColor:"#9999ff"}}
+                    >OCaml</div>
+                  </div>
+                </div>
+                <div>
+                  <div className="Skill-Category"><strong>Web Development</strong></div>
+                  <div className="d-flex justify-content-around flex-row flex-wrap">
+                    <div
+                      className="Skill"
+                      style={{backgroundColor:"#9999ff"}}
+                    >JavaScript</div>
+                    <div
+                      className="Skill"
+                      style={{backgroundColor:"#9999ff"}}
+                    >React</div>
+                    <div
+                      className="Skill"
+                      style={{backgroundColor:"#9999ff"}}
+                    >GSAP</div>
+                    <div
+                      className="Skill"
+                      style={{backgroundColor:"#9999ff"}}
+                    >HTML</div>
+                    <div
+                      className="Skill"
+                      style={{backgroundColor:"#9999ff"}}
+                    >CSS</div>
+                  </div>
+                </div>
+                <div>
+                  <div className="Skill-Category"><strong>Other</strong></div>
+                  <div className="d-flex justify-content-around flex-row flex-wrap">
+                    <div
+                      className="Skill"
+                      style={{backgroundColor:"#9999ff"}}
+                    >Git</div>
+                    <div
+                      className="Skill"
+                      style={{backgroundColor:"#9999ff"}}
+                    >Slack</div>
+                    <div
+                      className="Skill"
+                      style={{backgroundColor:"#9999ff"}}
+                    >Unix</div>
+                    <div
+                      className="Skill"
+                      style={{backgroundColor:"#9999ff"}}
+                    >Assembly</div>
+                    <div
+                      className="Skill"
+                      style={{backgroundColor:"#9999ff"}}
+                    >Unity</div>
+                    <div
+                      className="Skill"
+                      style={{backgroundColor:"#9999ff"}}
+                    >Heroku</div>
+                  </div>
+                </div>
+                <div>
+                  <div className="Skill-Category"><strong>Education</strong></div>
+                  <div className="d-flex justify-content-around flex-row flex-wrap">
+                    <div
+                      className="Skill"
+                      style={{backgroundColor:"#9999ff"}}
+                    >Object-Oriented Programming</div>
+                    <div
+                      className="Skill"
+                      style={{backgroundColor:"#9999ff"}}
+                    >Data Structures</div>
+                    <div
+                      className="Skill"
+                      style={{backgroundColor:"#9999ff"}}
+                    >Organization of Programming Languages</div>
+                    <div
+                      className="Skill"
+                      style={{backgroundColor:"#9999ff"}}
+                    >Algorithms</div>
+                    <div
+                      className="Skill"
+                      style={{backgroundColor:"#9999ff"}}
+                    >Discrete Structures</div>
+                    <div
+                      className="Skill"
+                      style={{backgroundColor:"#9999ff"}}
+                    >Multivariate Calculus</div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div className="Content-Block Skills">
-              <div>
-                <div className="Skill-Category"><strong>Core</strong></div>
-                <div className="d-flex justify-content-around flex-row flex-wrap">
-                  <div
-                    className="Skill"
-                    style={{backgroundColor:"#9999ff"}}
-                  >Python</div>
-                  <div
-                    className="Skill"
-                    style={{backgroundColor:"#9999ff"}}
-                  >Java</div>
-                  <div
-                    className="Skill"
-                    style={{backgroundColor:"#9999ff"}}
-                  >C</div>
-                  <div
-                    className="Skill"
-                    style={{backgroundColor:"#9999ff"}}
-                  >Ruby</div>
-                  <div
-                    className="Skill"
-                    style={{backgroundColor:"#9999ff"}}
-                  >OCaml</div>
-                </div>
-              </div>
-              <div>
-                <div className="Skill-Category"><strong>Web Development</strong></div>
-                <div className="d-flex justify-content-around flex-row flex-wrap">
-                  <div
-                    className="Skill"
-                    style={{backgroundColor:"#9999ff"}}
-                  >JavaScript</div>
-                  <div
-                    className="Skill"
-                    style={{backgroundColor:"#9999ff"}}
-                  >React</div>
-                  <div
-                    className="Skill"
-                    style={{backgroundColor:"#9999ff"}}
-                  >GSAP</div>
-                  <div
-                    className="Skill"
-                    style={{backgroundColor:"#9999ff"}}
-                  >HTML</div>
-                  <div
-                    className="Skill"
-                    style={{backgroundColor:"#9999ff"}}
-                  >CSS</div>
-                </div>
-              </div>
-              <div>
-                <div className="Skill-Category"><strong>Other</strong></div>
-                <div className="d-flex justify-content-around flex-row flex-wrap">
-                  <div
-                    className="Skill"
-                    style={{backgroundColor:"#9999ff"}}
-                  >Git</div>
-                  <div
-                    className="Skill"
-                    style={{backgroundColor:"#9999ff"}}
-                  >Slack</div>
-                  <div
-                    className="Skill"
-                    style={{backgroundColor:"#9999ff"}}
-                  >Unix</div>
-                  <div
-                    className="Skill"
-                    style={{backgroundColor:"#9999ff"}}
-                  >Assembly</div>
-                  <div
-                    className="Skill"
-                    style={{backgroundColor:"#9999ff"}}
-                  >Unity</div>
-                  <div
-                    className="Skill"
-                    style={{backgroundColor:"#9999ff"}}
-                  >Heroku</div>
-                </div>
-              </div>
-              <div>
-                <div className="Skill-Category"><strong>Education</strong></div>
-                <div className="d-flex justify-content-around flex-row flex-wrap">
-                  <div
-                    className="Skill"
-                    style={{backgroundColor:"#9999ff"}}
-                  >Object-Oriented Programming</div>
-                  <div
-                    className="Skill"
-                    style={{backgroundColor:"#9999ff"}}
-                  >Data Structures</div>
-                  <div
-                    className="Skill"
-                    style={{backgroundColor:"#9999ff"}}
-                  >Organization of Programming Languages</div>
-                  <div
-                    className="Skill"
-                    style={{backgroundColor:"#9999ff"}}
-                  >Algorithms</div>
-                  <div
-                    className="Skill"
-                    style={{backgroundColor:"#9999ff"}}
-                  >Discrete Structures</div>
-                  <div
-                    className="Skill"
-                    style={{backgroundColor:"#9999ff"}}
-                  >Multivariate Calculus</div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div className="Content-Block Content-Title">
-                Contact
+            <div ref={div => this.componentRef[3]=div}>
+              <div
+                className="Content-Block Content-Title"
+              >
+                <u>Contact</u>
               </div>
               <div className="Content-Block Contact">
                 <FontAwesomeIcon icon={faPhoneSquareAlt} />
@@ -442,17 +404,16 @@ class App extends React.Component {
             </div>
           </Container>
         </div>
-        <div ref={div => this.componentRef[2]=div}>
+        <div ref={div => this.componentRef[4]=div}>
           <Container
             fluid
             className="d-flex justify-content-center flex-column"
           >
             <div className="Content-Block Content-Title">
-              Professional Experience
+              <u>Professional Experience</u>
             </div>
             <div className="Content-Block" style={{marginTop:"1rem"}}>
               <div
-                style={{marginTop:"1rem"}}
                 className="d-flex justify-content-around flex-row flex-wrap"
               >
                 {/* no image */}
@@ -477,8 +438,8 @@ class App extends React.Component {
                   (518)-256-7188
                 </div>
               </div>
+              <hr style={{height:"2px", color:"#212529", backgroundColor:"#212529"}}/>
               <div
-                style={{marginTop:"1rem"}}
                 className="d-flex justify-content-center flex-row flex-wrap"
               >
                 <a href="https://www.fire.umd.edu/pvc">
@@ -505,17 +466,16 @@ class App extends React.Component {
             </div>
           </Container>
         </div>
-        <div ref={div => this.componentRef[3]=div}>
+        <div ref={div => this.componentRef[5]=div}>
           <Container
             fluid
             className="d-flex justify-content-center flex-column"
           >
             <div className="Content-Block Content-Title">
-              Personal
+              <u>Personal</u>
             </div>
             <div className="Content-Block" style={{marginTop:"1rem"}}>
               <div
-                style={{marginTop:"1rem"}}
                 className="d-flex justify-content-around flex-row flex-wrap"
               >
                 <div className="Info"><strong>
@@ -547,10 +507,10 @@ class App extends React.Component {
                   </a>
                 </div>
               </div>
+              <hr style={{height:"2px", color:"#212529", backgroundColor:"#212529"}}/>
             </div>
-            <div className="Content-Block" style={{marginTop:"1rem"}}>
+            <div className="Content-Block">
               <div
-                style={{marginTop:"1rem"}}
                 className="d-flex justify-content-around flex-row flex-wrap"
               >
                 <div className="Info"><strong>
@@ -582,10 +542,10 @@ class App extends React.Component {
                   </a>
                 </div>
               </div>
+              <hr style={{height:"2px", color:"#212529", backgroundColor:"#212529"}}/>
             </div>
-            <div className="Content-Block" style={{marginTop:"1rem"}}>
+            <div className="Content-Block">
               <div
-                style={{marginTop:"1rem"}}
                 className="d-flex justify-content-around flex-row flex-wrap"
               >
                 <div className="Info"><strong>
@@ -607,10 +567,10 @@ class App extends React.Component {
                   </a>
                 </div>
               </div>
+              <hr style={{height:"2px", color:"#212529", backgroundColor:"#212529"}}/>
             </div>
-            <div className="Content-Block" style={{marginTop:"1rem"}}>
+            <div className="Content-Block">
               <div
-                style={{marginTop:"1rem"}}
                 className="d-flex justify-content-around flex-row flex-wrap"
               >
                 <div className="Info"><strong>
