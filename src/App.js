@@ -364,7 +364,11 @@ class App extends React.Component {
                     <div
                       className="Skill"
                       style={{backgroundColor:"#9999ff"}}
-                    >Data Structures</div>
+                    >Intro to Computer Systems</div>
+                    <div
+                      className="Skill"
+                      style={{backgroundColor:"#9999ff"}}
+                    >Discrete Structures</div>
                     <div
                       className="Skill"
                       style={{backgroundColor:"#9999ff"}}
@@ -376,7 +380,11 @@ class App extends React.Component {
                     <div
                       className="Skill"
                       style={{backgroundColor:"#9999ff"}}
-                    >Discrete Structures</div>
+                    >Intro to Artificial Intelligence</div>
+                    <div
+                      className="Skill"
+                      style={{backgroundColor:"#9999ff"}}
+                    >Programming Language Technologies and Paradigms</div>
                     <div
                       className="Skill"
                       style={{backgroundColor:"#9999ff"}}
@@ -420,15 +428,17 @@ class App extends React.Component {
                 <div className="Info"><strong>
                   Web Development Intern at Cmind Inc <br />
                   Jun 2020 - Aug 2020 <br />
-                  Tools Used: JavaScript, React, Visual Studio
                 </strong></div>
                 <div className="Description">
-                  {"I created several visually appealing and dynamic \
-                   features on the web product \
-                   through close collaboration and visualization of compiled \
-                   financial and risk score data. I maintained and updated \
-                   the web product as development advanced through the \
-                   early stages of public distribution. "}
+                  Using <b>React</b> and <b>Javascript</b>, I created
+                  several visually appealing and dynamic features on the web
+                  product, including but not limited to market tracking, peer
+                  group analysis, and earning call graphs, through close
+                  collaboration with upper management. Due to my performance
+                  and growth during this period, I was trusted with mentoring
+                  another web development intern by providing learning
+                  resources, helping with debugging, and overlooking their
+                  first assignment.
                 </div>
                 <div className="Description">
                   <u>Reference</u><br />
@@ -452,15 +462,19 @@ class App extends React.Component {
                 <div className="Info"><strong>
                   Student Researcher at FIRE <br />
                   Aug 2018 - Dec 2019 <br />
-                  Tools Used: C#, Unity, ARCore
                 </strong></div>
                 <div className="Description">
-                  {"Collaborated with the Phillips Collection to utilize \
-                  augmented reality and virtual reality to develop \
-                  innovative ways to explore and learn from museums. Invited \
-                  to UMD’s Summer Research Fellowship Program, where I \
-                  worked closely with \
-                  my advisor and peers to further my research."}
+                  As a member of the FIRE research stream Philips Virtual
+                  Culture, we collaborated with the Phillips Collection
+                  to utilize augmented reality and virtual reality to develop
+                  innovative ways to explore and learn from museums. Utilizing
+                  <b> C#, Unity, and ARCore</b>, I constructed a mobile
+                  application that generates an interactive gallery,
+                  which included videos, art, transcripts, and audiotapes.
+                  I was also invited to be a part of the  Summer Research
+                  Fellowship Program. During that time, I worked closely
+                  with my advisor and peers to further our research and
+                  help the development of each other{"'"}s projects.
                 </div>
               </div>
             </div>
@@ -479,12 +493,41 @@ class App extends React.Component {
                 className="d-flex justify-content-around flex-row flex-wrap"
               >
                 <div className="Info"><strong>
-                  Cake Animations <br />
-                  Tools Used: GSAP, JavaScript, React
+                  Data and Cloud Computing Society <br />
                 </strong></div>
                 <div className="Description">
-                  {"Project with the goal of exploring, learning, and \
-                  practicing GSAP and animating web elements."}
+                  A club dedicated to learning about cloud computing, data,
+                  and information technology by conducting semester-long
+                  projects to give exposure and teach members how to use
+                  available services and technologies. While I have been a
+                  member, I have learned how to deploy a WordPress website
+                  with <b>AWS</b> by creating an EC2 instance, and we plan
+                  to use the <b>MERN</b> stack for our current project.
+                </div>
+                <div
+                  title="LinkedIn"
+                >
+                  <a href="https://www.linkedin.com/company/data-and-cloud-computing-society/">
+                    <FontAwesomeIcon
+                      icon={faLinkedin}
+                      className="Project-Icon"
+                    />
+                  </a>
+                </div>
+              </div>
+              <hr style={{height:"2px", color:"#212529", backgroundColor:"#212529"}}/>
+            </div>
+            <div className="Content-Block" style={{marginTop:"1rem"}}>
+              <div
+                className="d-flex justify-content-around flex-row flex-wrap"
+              >
+                <div className="Info"><strong>
+                  Cake Animations <br />
+                </strong></div>
+                <div className="Description">
+                  A fun reactive website using
+                  <b> HTML, CSS, JavaScript, React, and GSAP </b>
+                  to practice web development and experiment with GSAP.
                 </div>
                 <div
                   title="Website"
@@ -515,11 +558,12 @@ class App extends React.Component {
               >
                 <div className="Info"><strong>
                   Basic Calculator <br />
-                  Tools Used: JavaScript, React
                 </strong></div>
                 <div className="Description">
-                  {"Simple standard calculator with the goal of \
-                  practicing fundamental concepts for React."}
+                  A basic web standard calculator built with
+                  <b> JavaScript and React </b>
+                  to practice fundamental concepts and to get familiar with
+                  React.
                 </div>
                 <div
                   title="Website"
@@ -550,11 +594,12 @@ class App extends React.Component {
               >
                 <div className="Info"><strong>
                   Personal Website <br />
-                  Tools Used: JavaScript, React, GSAP
                 </strong></div>
                 <div className="Description">
-                  {"Personal website designed to be a portfolio. \
-                  I will continue to update it as time pass."}
+                  A personal website constructed using
+                  <b> HTML, CSS, JavaScript, React, and GSAP </b>
+                  and designed to act as a portfolio. I will continue to
+                  update it as time pass.
                 </div>
                 <div
                   title="GitHub"
@@ -575,11 +620,13 @@ class App extends React.Component {
               >
                 <div className="Info"><strong>
                   Sierokarte Bot <br />
-                  Tools Used: Python, Heroku
                 </strong></div>
                 <div className="Description">
-                  {"Discord bot geared toward Granblue Fantasy for personal \
-                  use. The bot was hosted by Heroku."}
+                  A Discord bot was constructed using <b>Python</b>, and it
+                  was temporarily hosted on <b>Heroku</b>. I worked and
+                  maintained a centralized codebase on GitHub with a team of
+                  three. We sought to use this to improve the quality of life
+                  for beginners in the video game Granblue Fantasy.
                 </div>
                 <div
                   title="GitHub"
