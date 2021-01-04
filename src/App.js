@@ -430,7 +430,7 @@ class App extends React.Component {
                   Jun 2020 - Aug 2020 <br />
                 </strong></div>
                 <div className="Description">
-                  Using <b>React</b> and <b>Javascript</b>, I created
+                  Using <b>React</b> and <b>JavaScript</b>, I created
                   several visually appealing and dynamic features on the web
                   product, including but not limited to market tracking, peer
                   group analysis, and earning call graphs, through close
