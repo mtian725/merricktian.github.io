@@ -200,7 +200,7 @@ class App extends React.Component {
                   title="LinkedIn"
                   ref={div => this.iconsRef.push(div)}
                 >
-                  <a href="https://www.linkedin.com/in/merricktian/">
+                  <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/merricktian/">
                     <FontAwesomeIcon
                       icon={faLinkedin}
                       className="Icon Left"
@@ -212,7 +212,7 @@ class App extends React.Component {
                   ref={div => this.iconsRef.push(div)}
                   title="GitHub"
                 >
-                  <a href="https://github.com/mtian725">
+                  <a target="_blank" rel="noopener noreferrer" href="https://github.com/mtian725">
                     <FontAwesomeIcon
                       icon={faGithub}
                       className="Icon"
@@ -224,7 +224,7 @@ class App extends React.Component {
                   ref={div => this.iconsRef.push(div)}
                   title="Resume"
                 >
-                  <a href={require("./images/MerrickTianResume.pdf")}> {/* put updated resume */}
+                  <a target="_blank" rel="noopener noreferrer" href={require("./images/MerrickTianResume.pdf")}> {/* put updated resume */}
                     <FontAwesomeIcon
                       icon={faFileAlt}
                       className="Icon Right"
