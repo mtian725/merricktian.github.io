@@ -1,39 +1,21 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 import Hamburger from "./hamburger";
 import NavOverlay from "./navOverlay";
 import "./header.scss";
 
-function getWindowDimensions() {
-  const { innerWidth: width, innerHeight: height } = window;
-  return {
-    width,
-    height,
-  };
-}
-
-export default function Header() {
-  const [windowDimensions, setWindowDimensions] = useState(
-    getWindowDimensions()
-  );
+export default function Header(props: {
+  windowDimensions: { width: Number; height: number };
+}) {
   const [toggle, setToggle] = useState(false);
 
   function toggleBurger() {
     setToggle(!toggle);
   }
 
-  useEffect(() => {
-    function handleResize() {
-      setWindowDimensions(getWindowDimensions());
-    }
-
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
   let components;
-  if (windowDimensions.width > 600) {
+  if (props.windowDimensions.width > 600) {
     components = (
       <div className="header">
         <div className="material-icons home">

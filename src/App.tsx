@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
-import "./App.css";
 
+import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import Header from "./header/header";
@@ -9,23 +9,46 @@ import Career from "./career/career";
 import Projects from "./projects/projects";
 import Contact from "./contact/contact";
 
+import "./App.css";
+
+function getWindowDimensions() {
+  const { innerWidth: width, innerHeight: height } = window;
+  return {
+    width,
+    height,
+  };
+}
+
 function App() {
+  const [windowDimensions, setWindowDimensions] = useState(
+    getWindowDimensions()
+  );
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowDimensions(getWindowDimensions());
+    }
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <Router>
-      <Header />
+      <Header windowDimensions={windowDimensions} />
 
       <Switch>
         <Route exact path="/">
-          <Home />
+          <Home windowDimensions={windowDimensions} />
         </Route>
         <Route exact path="/Career">
-          <Career />
+          <Career windowDimensions={windowDimensions} />
         </Route>
         <Route exact path="/Projects">
-          <Projects />
+          <Projects windowDimensions={windowDimensions} />
         </Route>
         <Route exact path="/Contact">
-          <Contact />
+          <Contact windowDimensions={windowDimensions} />
         </Route>
       </Switch>
     </Router>

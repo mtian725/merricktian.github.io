@@ -10,6 +10,7 @@
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
+  z-index: 9;
 }
 
 .nav-overlay {
@@ -28,16 +29,16 @@
 
   .tabs {
     height: 80px;
-    margin-top: auto;
-    margin-bottom: auto;
     color: black;
     font-style: normal;
     align-items: center;
     text-align: center;
-    cursor: pointer;
     font-family: "Lato", sans-serif;
     font-size: 48px;
-    line-height: 38px;
+    cursor: pointer;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
   }
 
   a {

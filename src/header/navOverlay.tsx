@@ -9,14 +9,20 @@ export default function NavOverlay(props: HeaderProps) {
   return (
     <div className={`off ${props.toggleStatus ? "nav-overlay" : ""}`}>
       <div className="nav-container">
-        <div className="tabs" onClick={props.toggleFunction}>
-          <Link to="/Career">Career</Link>
+        <div className="tabs">
+          <Link to="/Career" onClick={props.toggleFunction}>
+            Career
+          </Link>
         </div>
-        <div className="tabs" onClick={props.toggleFunction}>
-          <Link to="/Projects">Projects</Link>
+        <div className="tabs">
+          <Link to="/Projects" onClick={props.toggleFunction}>
+            Projects
+          </Link>
         </div>
-        <div className="tabs" onClick={props.toggleFunction}>
-          <Link to="/Contact">Contact</Link>
+        <div className="tabs">
+          <Link to="/Contact" onClick={props.toggleFunction}>
+            Contact
+          </Link>
         </div>
       </div>
     </div>
