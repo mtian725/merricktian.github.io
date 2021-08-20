@@ -61,7 +61,7 @@ export default function Header() {
           <div className="filler"></div>
           <Hamburger toggleStatus={toggle} toggleFunction={toggleBurger} />
         </div>
-        <NavOverlay toggleStatus={toggle} toggleFunction={toggleBurger}/>
+        <NavOverlay toggleStatus={toggle} toggleFunction={toggleBurger} />
       </div>
     );
   }

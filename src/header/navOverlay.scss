@@ -1,11 +1,12 @@
 .off {
   position: absolute;
   top: 80px;
-  background-color: #DCDCDC;
+  background-color: #dcdcdc;
   height: calc(100vh - 80px);
   width: 100vw;
   opacity: 0;
-  transition: opacity 0.3s;
+  visibility: hidden;
+  transition: all 0.3s;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -13,7 +14,8 @@
 
 .navOverlay {
   opacity: 1;
-  transition: opacity 0.3s;
+  visibility: visible;
+  transition: all 0.3s;
 }
 
 .navContainer {
