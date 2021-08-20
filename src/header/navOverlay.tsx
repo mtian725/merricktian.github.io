@@ -7,8 +7,8 @@ export default function NavOverlay(props: HeaderProps) {
   // be true at this point so the callback will always set toggle
   // to false
   return (
-    <div className={`off ${props.toggleStatus ? "navOverlay" : ""}`}>
-      <div className="navContainer">
+    <div className={`off ${props.toggleStatus ? "nav-overlay" : ""}`}>
+      <div className="nav-container">
         <div className="tabs" onClick={props.toggleFunction}>
           <Link to="/Career">Career</Link>
         </div>
