@@ -1,8 +1,8 @@
 import "./navOverlay.scss";
-
+import { HeaderProps } from "./headerPropTypes";
 import { Link } from "react-router-dom";
 
-export default function NavOverlay(props) {
+export default function NavOverlay(props: HeaderProps) {
   // toggleFunction does setToggle(!toggle) but toggle will always
   // be true at this point so the callback will always set toggle
   // to false
