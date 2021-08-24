@@ -24,7 +24,7 @@ export default function Contact(props: {
     tag: "tag",
   };
 
-  if (props.windowDimensions.width < 800) {
+  if (props.windowDimensions.width < 825) {
     classNames.titleOne = "title-one-sm";
     classNames.titleTwo = "title-two-sm";
     classNames.icon = "material-icons icon-sm";

@@ -19,6 +19,17 @@ function getWindowDimensions() {
   };
 }
 
+// TO DO after finishing
+// Make some things unhighlightable
+// clean up scss using actual scss instead of just css
+
+// Cramped components
+// Project text get cramped from 225 px and less, might want to do something where I set
+// Contact me text get cramped from 350 px and less
+
+// worry about scrollbar styling / ie the footers for the projects stick out
+// ie text spilling
+
 function App() {
   const [windowDimensions, setWindowDimensions] = useState(
     getWindowDimensions()

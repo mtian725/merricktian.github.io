@@ -1,0 +1,167 @@
+$stroke: 4px;
+$size: 250px;
+$size-sm: 55.55vw;
+$padding: 16px;
+$padding-sm: 2vw;
+
+$pipe: calc(#{$size} + #{$padding} + #{$padding} + #{$stroke});
+$pipe-sm: calc(#{$size-sm} + #{$padding-sm} + #{$padding-sm} + #{$stroke});
+$pipes: 4;
+$transition_duration: 75ms;
+
+@function border-pipeline($transition_duration, $pipe) {
+  @return $transition_duration * $pipe;
+}
+
+// When resizing the window, a side effect of this is that it's "jiggly"
+// not exactly a problem.
+@mixin border-animation($dimension, $easing, $pipe) {
+  transition: $transition_duration $dimension $easing
+    border-pipeline($transition_duration, $pipe);
+}
+
+.projects {
+  margin: 5vh auto 5vh auto;
+  width: 90vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  .project-box,
+  .project-box-resize {
+    margin: 16px;
+    position: relative;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    transition: ($transition_duration * $pipes) + $transition_duration ease;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: black;
+
+    &:before {
+      position: absolute;
+      width: 0;
+      height: $stroke;
+      content: "";
+      background: black;
+      top: -$stroke;
+      left: -$stroke;
+      @include border-animation(width, ease, 3);
+    }
+    &:after {
+      position: absolute;
+      width: $stroke;
+      height: 0;
+      content: "";
+      background: black;
+      top: -$stroke;
+      right: -$stroke;
+      @include border-animation(height, ease, 2);
+    }
+    &-inner:after {
+      position: absolute;
+      width: 0;
+      height: $stroke;
+      content: "";
+      background: black;
+      bottom: -$stroke;
+      right: -$stroke;
+      @include border-animation(width, ease, 1);
+    }
+    &-inner:before {
+      position: absolute;
+      width: $stroke;
+      height: 0;
+      content: "";
+      background: black;
+      bottom: -$stroke;
+      left: -$stroke;
+      @include border-animation(height, ease, 0);
+    }
+  }
+
+  .project-box {
+    padding: $padding;
+
+    &:hover {
+      &:before {
+        width: $pipe;
+        @include border-animation(width, ease, 0);
+      }
+
+      &:after {
+        height: $pipe;
+        @include border-animation(height, ease, 1);
+      }
+
+      .project-box-inner:after {
+        width: $pipe;
+        @include border-animation(width, ease, 2);
+      }
+
+      .project-box-inner:before {
+        height: $pipe;
+        @include border-animation(height, ease, 3);
+      }
+    }
+
+    &-inner {
+      height: $size;
+      width: $size;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .label {
+      font-size: 32px;
+      background: white;
+      border: 2px black solid;
+      padding: 2px;
+    }
+  }
+
+  .project-box-resize {
+    padding: $padding-sm;
+
+    &:hover {
+      &:before {
+        width: $pipe-sm;
+        @include border-animation(width, ease, 0);
+      }
+
+      &:after {
+        height: $pipe-sm;
+        @include border-animation(height, ease, 1);
+      }
+
+      .project-box-resize-inner:after {
+        width: $pipe-sm;
+        @include border-animation(width, ease, 2);
+      }
+
+      .project-box-resize-inner:before {
+        height: $pipe-sm;
+        @include border-animation(height, ease, 3);
+      }
+    }
+
+    &-inner {
+      width: $size-sm;
+      height: $size-sm;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .label {
+      font-size: 24px;
+      background: white;
+      border: 2px black solid;
+      padding: 2px;
+    }
+  }
+}
