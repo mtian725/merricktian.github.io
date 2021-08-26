@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 
 import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
@@ -8,8 +7,6 @@ import Home from "./home/home";
 import Career from "./career/career";
 import Projects from "./projects/projects";
 import Contact from "./contact/contact";
-
-import "./App.css";
 
 function getWindowDimensions() {
   const { innerWidth: width, innerHeight: height } = window;
@@ -29,6 +26,10 @@ function getWindowDimensions() {
 
 // worry about scrollbar styling / ie the footers for the projects stick out
 // ie text spilling
+
+// Worry about cleaning up code
+
+// Worry about fixing adjustments vertically
 
 function App() {
   const [windowDimensions, setWindowDimensions] = useState(
