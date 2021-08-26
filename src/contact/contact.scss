@@ -171,5 +171,26 @@
     .underline:hover + .tag-sm {
       display: block;
     }
+
+    .tag::before,
+    .tag-sm::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      border-width: 10px;
+      border-style: solid;
+      border-color: transparent transparent black transparent;
+    }
+
+    .tag::before {
+      top: -20px;
+      border-width: 10px;
+    }
+
+    .tag-sm::before {
+      top: -10px;
+      border-width: 5px;
+    }
   }
 }

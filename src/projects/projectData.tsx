@@ -1,3 +1,4 @@
+import Website from "../images/website.png";
 import Chess from "../images/chess.png";
 import Cake from "../images/cake.png";
 import Calculator from "../images/calculator.png";
@@ -43,7 +44,7 @@ type projectItem = {
 export const projectData: projectItem[] = [
   {
     name: "Personal Website",
-    image: "",
+    image: Website,
     status: status.complete,
     tools: ["React.js", "TypeScript", "Sass"],
     description: `A personal website that acts as a portfolio. I plan to 
