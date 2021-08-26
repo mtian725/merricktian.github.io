@@ -46,6 +46,7 @@ export default function ProjectOverlay(props: {
           {item}
         </div>
       );
+      return item;
     });
     const tools = <div className="tools">{toolsItems}</div>;
 
@@ -54,6 +55,7 @@ export default function ProjectOverlay(props: {
       <a
         href={project?.links.github}
         target="_blank"
+        rel="noreferrer"
         className="link"
         key="Github"
       >
@@ -63,10 +65,17 @@ export default function ProjectOverlay(props: {
     if (project?.links.urls) {
       project?.links.urls.map((item) => {
         links.push(
-          <a href={item.url} target="_blank" className="link" key={item.label}>
+          <a
+            href={item.url}
+            target="_blank"
+            className="link"
+            rel="noreferrer"
+            key={item.label}
+          >
             {item.label}
           </a>
         );
+        return item;
       });
     }
     const footer = <div className="footer">{links}</div>;
