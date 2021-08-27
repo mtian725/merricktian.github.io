@@ -24,7 +24,13 @@ export default function Contact(props: {
     tag: "tag",
   };
 
-  if (props.windowDimensions.width < 825) {
+  if (props.windowDimensions.width < 375) {
+    classNames.titleOne = "title-one-xs";
+    classNames.titleTwo = "title-two-xs";
+    classNames.icon = "material-icons icon-xs";
+    classNames.contactInfo = "contact-info-xs";
+    classNames.tag = "tag-xs";
+  } else if (props.windowDimensions.width < 825) {
     classNames.titleOne = "title-one-sm";
     classNames.titleTwo = "title-two-sm";
     classNames.icon = "material-icons icon-sm";

@@ -26,7 +26,9 @@
   .title-one,
   .title-two,
   .title-one-sm,
-  .title-two-sm {
+  .title-two-sm,
+  .title-one-xs,
+  .title-two-xs {
     color: black;
     font-style: normal;
     align-items: center;
@@ -57,6 +59,17 @@
     line-height: 40px;
   }
 
+  .title-one-xs {
+    margin-top: auto;
+    font-size: 18px;
+    line-height: 14.5px;
+  }
+
+  .title-two-xs {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
   // Right now justify-content: center is good enough, but
   // later on if more items are added change how it's aligned
   // to make it more even
@@ -65,8 +78,10 @@
 
     .icon,
     .icon-sm,
+    .icon-xs,
     .contact-info,
-    .contact-info-sm {
+    .contact-info-sm,
+    .contact-info-xs {
       width: fit-content;
     }
 
@@ -84,6 +99,13 @@
       margin-right: 4px;
     }
 
+    .icon-xs {
+      font-size: 20px;
+      line-height: 20px;
+      margin-left: 8px;
+      margin-right: 4px;
+    }
+
     .contact-info {
       font-size: 64px;
       line-height: 80px;
@@ -95,6 +117,14 @@
     .contact-info-sm {
       font-size: 32px;
       line-height: 40px;
+      font-family: "Lato", sans-serif;
+      margin-left: 4px;
+      margin-right: 8px;
+    }
+
+    .contact-info-xs {
+      font-size: 24px;
+      line-height: 30px;
       font-family: "Lato", sans-serif;
       margin-left: 4px;
       margin-right: 8px;
@@ -138,7 +168,8 @@
     }
 
     .tag,
-    .tag-sm {
+    .tag-sm,
+    .tag-xs {
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
@@ -167,13 +198,23 @@
       padding: 4px;
     }
 
+    .tag-xs {
+      border-radius: 4px;
+      border: 1px white solid;
+      margin: 3px;
+      font-size: 12px;
+      padding: 3px;
+    }
+
     .underline:hover + .tag,
-    .underline:hover + .tag-sm {
+    .underline:hover + .tag-sm,
+    .underline:hover + .tag-xs {
       display: block;
     }
 
     .tag::before,
-    .tag-sm::before {
+    .tag-sm::before,
+    .tag-xs::before {
       content: "";
       position: absolute;
       left: 50%;
@@ -191,6 +232,11 @@
     .tag-sm::before {
       top: -10px;
       border-width: 5px;
+    }
+
+    .tag-xs::before {
+      top: -5px;
+      border-width: 2.5px;
     }
   }
 }

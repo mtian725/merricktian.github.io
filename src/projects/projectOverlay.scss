@@ -47,7 +47,7 @@ $footer-space: 48px;
 
   .image {
     // No idea why it's -12px and not -24px
-    height: calc(50% - #{$footer-space} - 12px);
+    height: calc(30% - #{$footer-space} - 12px);
     background-repeat: no-repeat;
     background-size: contain;
     margin: 12px;
@@ -58,8 +58,9 @@ $footer-space: 48px;
   }
 
   .description {
-    height: calc(50% - #{$footer-space} - 24px);
+    height: calc(70% - #{$footer-space} - 24px);
     margin: 12px;
+    overflow: auto;
   }
 
   .tools {
