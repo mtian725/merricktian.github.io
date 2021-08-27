@@ -23,9 +23,6 @@ function getWindowDimensions() {
 // Project text get cramped from 225 px and less, might want to do something where I set
 // Contact me text get cramped from 350 px and less
 
-// worry about scrollbar styling / ie the footers for the projects stick out
-// ie text spilling
-
 // Worry about cleaning up code
 
 // Worry about fixing adjustments vertically
