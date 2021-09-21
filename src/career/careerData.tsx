@@ -59,7 +59,7 @@ export const academicExperience: careerItem[] = [
   {
     title: "Undergrad Teaching Assistant",
     start: "Jan 2021",
-    end: "May 2021",
+    end: "Dec 2021",
     org: "CMSC433: Programming Language Technologies and Paradigms",
     url: "https://www.cs.umd.edu/class/spring2021/cmsc433/",
     description: `Held office hours and answered questions pertaining to multithreading, distributed systems,
