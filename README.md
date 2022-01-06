@@ -1,6 +1,6 @@
 # Personal Website
 
-Check it out: https://merricktian.me/
+Check it out: https://www.merricktian.me/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
