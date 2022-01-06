@@ -1,4 +1,5 @@
 import { professionalExperience, academicExperience } from "./careerData";
+import TranscriptComponent from "./transcriptComponent.js";
 
 import "./career.scss";
 
@@ -104,6 +105,7 @@ export default function Career(props: {
                 <div>{item.uniData?.minor}</div>
                 <div>{item.uniData?.gpa}</div>
                 <div>{item.uniData?.achievements}</div>
+                <TranscriptComponent />
               </div>
             )}
           </div>

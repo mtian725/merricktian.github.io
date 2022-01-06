@@ -76,8 +76,8 @@ export const academicExperience: careerItem[] = [
     uniData: {
       major: "B.S. Computer Science",
       minor: "Minor: Classical Mythology",
-      gpa: "3.828/4.000",
-      achievements: "Dean’s List: Fall 2018 - Spring 2021",
+      gpa: "3.810/4.000",
+      achievements: "Dean’s List: Fall 2018 - Fall 2021",
     },
   },
 ];

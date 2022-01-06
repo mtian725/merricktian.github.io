@@ -21,8 +21,8 @@ export default function Home(props: {
         <div className="name">Hey There!</div>
         <div className="name">I'm Merrick Tian</div>
         <div className="intro">
-          A programmer, a software engineer, a web developer, and responsible
-          for many silly projects
+          A aspiring fullstack developer, and responsible for many silly
+          projects
         </div>
 
         <div className="home-line"></div>
