@@ -37,37 +37,34 @@
     font-family: "Lato", sans-serif;
   }
 
+  .title-one,
+  .title-two {
+    font-size: 48px;
+  }
+
   .title-one {
     margin-top: auto;
-    font-size: 48px;
     line-height: 58px;
   }
 
-  .title-two {
-    font-size: 64px;
-    line-height: 80px;
+  .title-one-sm,
+  .title-two-sm {
+    font-size: 24px;
   }
 
   .title-one-sm {
     margin-top: auto;
-    font-size: 24px;
     line-height: 29px;
   }
 
-  .title-two-sm {
-    font-size: 32px;
-    line-height: 40px;
+  .title-one-xs,
+  .title-two-xs {
+    font-size: 18px;
   }
 
   .title-one-xs {
     margin-top: auto;
-    font-size: 18px;
     line-height: 14.5px;
-  }
-
-  .title-two-xs {
-    font-size: 24px;
-    line-height: 30px;
   }
 
   // Right now justify-content: center is good enough, but
@@ -86,45 +83,39 @@
     }
 
     .icon {
-      font-size: 80px;
-      line-height: 80px;
+      font-size: 60px;
       margin-left: 16px;
       margin-right: 8px;
     }
 
     .icon-sm {
-      font-size: 40px;
-      line-height: 40px;
+      font-size: 30px;
       margin-left: 8px;
       margin-right: 4px;
     }
 
     .icon-xs {
       font-size: 20px;
-      line-height: 20px;
       margin-left: 8px;
       margin-right: 4px;
     }
 
     .contact-info {
-      font-size: 64px;
-      line-height: 80px;
+      font-size: 48px;
       font-family: "Lato", sans-serif;
       margin-left: 8px;
       margin-right: 16px;
     }
 
     .contact-info-sm {
-      font-size: 32px;
-      line-height: 40px;
+      font-size: 24px;
       font-family: "Lato", sans-serif;
       margin-left: 4px;
       margin-right: 8px;
     }
 
     .contact-info-xs {
-      font-size: 24px;
-      line-height: 30px;
+      font-size: 18px;
       font-family: "Lato", sans-serif;
       margin-left: 4px;
       margin-right: 8px;

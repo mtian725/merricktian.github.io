@@ -50,10 +50,8 @@ export default function Contact(props: {
     <div className="contact-container-helper">
       <div className="contact-container">
         <div className="title-box">
-          <div className={classNames.titleOne}>Looking to reach out to me?</div>
-          <div className={classNames.titleTwo}>
-            I'd Love To Connect With You
-          </div>
+          <div className={classNames.titleOne}>I'd Love To Connect With You</div>
+          <div className={classNames.titleTwo}>Feel Free To Reach Out By Emailing</div>
         </div>
 
         <div className="contact-content-container">

@@ -43,12 +43,13 @@ type projectItem = {
 
 export const projectData: projectItem[] = [
   {
-    name: "Personal Website",
+    name: "merricktian.me",
     image: Website,
     status: status.complete,
     tools: ["React.js", "TypeScript", "Sass"],
     description: `A personal website that acts as a portfolio. I plan to 
-    periodically add to it to keep it up to date.`,
+    periodically add to it to keep it up to date. All my side projects 
+    are recorded here as well. Thanks for visiting!`,
     links: {
       github: "https://github.com/mtian725/merricktian.github.io",
     },
