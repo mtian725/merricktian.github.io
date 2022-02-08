@@ -31,7 +31,7 @@ export const professionalExperience: careerItem[] = [
     title: "Web Development Intern",
     start: "Jun 2020",
     end: "Aug 2020",
-    org: "Cmind Inc",
+    org: "Cmind Ai",
     url: "https://www.cmind-ai.com/",
     description: `Created a visually appealing and dynamic web product through close collaboration with the
     back end team by visualizing compiled financial and risk score data. Updated and maintained the web product using BitBucket as development advanced
