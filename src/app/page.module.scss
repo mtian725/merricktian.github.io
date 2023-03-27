@@ -1,0 +1,291 @@
+@mixin column-box($justify-content: flex-start) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: $justify-content;
+}
+
+@mixin border($border-size: 0.25rem) {
+  border: $border-size solid black;
+  border-radius: 0.5rem;
+}
+
+@mixin text-format() {
+  padding: 1rem 0rem 2rem;
+  height: auto;
+  width: 90%;
+}
+
+.main {
+  @include column-box();
+
+  padding: 3rem 6rem 6rem;
+  min-height: 100vh;
+}
+
+.headshot {
+  @include border();
+}
+
+.namecard {
+  padding: 2rem 2.4rem;
+}
+
+.tabScrollBox {
+  overflow-y: scroll;
+  width: var(--max-width);
+  max-width: 100%;
+}
+
+.infoTabContainer {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(33%, auto));
+  width: var(--max-width);
+  max-width: 100%;
+  min-width: 600px;
+}
+
+.tabContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tabOutline {
+  cursor: pointer;
+}
+
+.tab {
+  margin: 1rem 1.2rem;
+  padding: 1rem 1.2rem;
+  position: relative;
+  text-align: center;
+
+  // underline animation pulled from https://www.30secondsofcode.org/css/s/hover-underline-animation/
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+  &:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+}
+
+.tab_selected {
+  @include border($border-size: 0.125rem);
+}
+
+.infoContainer {
+  @include column-box($justify-content: center);
+
+  padding: 2rem 2.4rem;
+  width: var(--max-width);
+  max-width: 100%;
+}
+
+.aboutMeText {
+  @include text-format();
+}
+
+.tehc {
+  height: auto;
+  width: 80%;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.projectContainer {
+  height: auto;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.projectItem {
+  @include border();
+
+  height: 200px;
+  width: 300px;
+  margin: 1rem;
+  overflow: hidden;
+  position: relative;
+
+  .overlay {
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    background-color: black;
+    transition: opacity 0.5s ease;
+  }
+
+  .projectTitleBox {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: opacity 0.5s ease;
+
+    .titleCard {
+      @include border($border-size: 0.125rem);
+      padding: 0.25rem;
+      background-color: white;
+      text-align: center;
+    }
+  }
+
+  .projectImage {
+    position: absolute;
+    height: auto;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    transition: opacity 0.5s ease;
+  }
+
+  &:hover {
+    .overlay {
+      opacity: 0.75;
+    }
+
+    .projectTitleBox,
+    .projectImage {
+      opacity: 0;
+    }
+  }
+}
+
+.links {
+  width: 50px;
+  height: auto;
+  margin: 1rem;
+
+  // https://codepen.io/nelledejones/pen/gOOPWrK
+  &:hover {
+    animation: hithere 1s ease 1;
+  }
+}
+
+.projectYear {
+  @include text-format();
+  text-align: center;
+}
+
+.contactText {
+  @include text-format();
+  text-align: center;
+}
+
+.contactItemContainer {
+  height: auto;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+@mixin text-format-mobile() {
+  padding: 0.5rem 0rem 1rem;
+  width: 100%;
+}
+
+/* Mobile and Tablet */
+@media (max-width: 850px) {
+  .main {
+    @include column-box();
+
+    padding: 1rem 2rem 2rem;
+    min-height: 100vh;
+  }
+
+  .namecard {
+    text-align: center;
+    padding: 1rem 1.2rem;
+  }
+
+  .tab {
+    margin: 0.5rem 0.6rem;
+    padding: 0.5rem 0.6rem;
+  }
+
+  .infoContainer {
+    padding: 1rem 1.2rem;
+  }
+
+  .aboutMeText {
+    @include text-format-mobile();
+  }
+
+  .tehc {
+    width: 90%;
+  }
+
+  .projectContainer {
+    width: 100%;
+  }
+
+  .projectItem {
+    margin: 0.5rem;
+  }
+
+  .links {
+    margin: 0.5rem;
+  }
+
+  .projectYear {
+    @include text-format-mobile();
+  }
+
+  .contactText {
+    @include text-format-mobile();
+  }
+
+  .contactItemContainer {
+    width: 90%;
+  }
+}
+
+@keyframes hithere {
+  30% {
+    transform: scale(1.2);
+  }
+  40%,
+  60% {
+    transform: rotate(-20deg) scale(1.2);
+  }
+  50% {
+    transform: rotate(20deg) scale(1.2);
+  }
+  70% {
+    transform: rotate(0deg) scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

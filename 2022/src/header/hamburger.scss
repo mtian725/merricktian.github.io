@@ -1,0 +1,33 @@
+.burger-box {
+  width: 48px;
+  height: 48px;
+  margin-right: 32px;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.line {
+  height: 4px;
+  border-radius: 30px;
+  width: 100%;
+  margin: auto;
+  background-color: white;
+  transform: translateY(0) rotate(0);
+  transition: transform 0.3s ease;
+}
+
+.top-bun-active {
+  transform: translateY(12px) rotate(-135deg);
+  transition: transform 0.3s ease;
+}
+
+.bottom-bun-active {
+  transform: translateY(-12px) rotate(135deg);
+  transition: transform 0.3s ease;
+}

@@ -1,0 +1,162 @@
+.career-container {
+  margin: 5vh auto auto auto;
+  width: 90vw;
+  font-size: 24px;
+  font-family: "Lato", sans-serif;
+}
+
+.container-sm {
+  font-size: 16px;
+}
+
+.container-xs,
+.container-xxs {
+  font-size: 14px;
+}
+
+.career-container-title {
+  margin-bottom: 32px;
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.title-sm,
+.title-xs,
+.title-xxs {
+  font-size: 24px;
+}
+
+.career-sub-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  .career-title-and-time {
+    width: 20%;
+    text-align: right;
+
+    .title {
+      font-weight: bold;
+      margin-right: 32px;
+      position: relative;
+      // -14.5px for half title/date height
+      top: -14.5px;
+    }
+
+    .date {
+      margin-right: 32px;
+      position: relative;
+      // -14.5px for half title/date height
+      top: -14.5px;
+    }
+  }
+
+  .career-block {
+    border-left: black 4px solid;
+    width: 80%;
+
+    .circle {
+      height: 48px;
+      width: 48px;
+      background: black;
+      border-radius: 50%;
+      position: relative;
+      top: -24px;
+      left: -26px;
+      margin: 0%;
+      color: white;
+      text-align: center;
+      line-height: 48px;
+      cursor: default;
+    }
+
+    .org {
+      margin-left: 32px;
+      font-weight: bold;
+      position: relative;
+      // -48px for the circle and -14.5px for half org/description height
+      top: -62.5px;
+      text-decoration: underline;
+
+      a {
+        color: #0074d9;
+
+        &:hover {
+          color: black;
+        }
+      }
+    }
+
+    .description {
+      margin-left: 32px;
+      position: relative;
+      // -48px for the circle and -14.5px for half org/description height
+      top: -62.5px;
+      a {
+        color: #0074d9;
+
+        &:hover {
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+.career-block-xss {
+  border-left: black 4px solid;
+
+  .circle {
+    height: 48px;
+    width: 48px;
+    background: black;
+    border-radius: 50%;
+    position: relative;
+    top: -24px;
+    left: -26px;
+    margin: 0%;
+    color: white;
+    text-align: center;
+    line-height: 48px;
+  }
+
+  .title {
+    font-weight: bold;
+    margin-left: 32px;
+    position: relative;
+    // -48px for the circle and -14.5px for half org/description height
+    top: -62.5px;
+  }
+
+  .date {
+    margin-left: 32px;
+    position: relative;
+    // -48px for the circle and -14.5px for half org/description height
+    top: -62.5px;
+  }
+
+  .org {
+    margin-left: 32px;
+    font-weight: bold;
+    position: relative;
+    // -48px for the circle and -14.5px for half org/description height
+    top: -62.5px;
+    text-decoration: underline;
+
+    a {
+      color: #0074d9;
+
+      &:hover {
+        color: black;
+      }
+    }
+  }
+
+  .description {
+    margin-left: 32px;
+    position: relative;
+    // -48px for the circle and -14.5px for half org/description height
+    top: -62.5px;
+  }
+}
