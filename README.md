@@ -2,6 +2,11 @@
 
 Check it out: https://www.merricktian.me/
 
+Note cannot deploy in github pages bc export is yet to be supported
+and github pages is export only
+https://nextjs.org/docs/deployment#static-only
+https://beta.nextjs.org/docs/app-directory-roadmap#supported-and-planned-features
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with
 [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
