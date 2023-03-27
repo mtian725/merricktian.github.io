@@ -9,7 +9,7 @@ export default function Home() {
     <main className={styles.main}>
       <Headshot />
       <div className={styles.namecard}>
-        <h1 className={inter.className}>Hey there, I'm Merrick Tian</h1>
+        <h1 className={inter.className}>Hey there, I&apos;m Merrick Tian</h1>
       </div>
       <InfoContainer />
     </main>
