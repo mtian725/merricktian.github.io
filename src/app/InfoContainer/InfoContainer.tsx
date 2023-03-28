@@ -27,7 +27,7 @@ const InfoContainer = (): JSX.Element => {
   };
 
   const contactMe = {
-    header: "Contact Me",
+    header: "Contact",
     picked: picked === Tabs.ContactMe,
     onClick: selectTab(Tabs.ContactMe),
   };
@@ -47,12 +47,10 @@ const InfoContainer = (): JSX.Element => {
 
   return (
     <>
-      <div className={styles.tabScrollBox}>
-        <div className={styles.infoTabContainer}>
-          <Tab {...aboutMe} />
-          <Tab {...projects} />
-          <Tab {...contactMe} />
-        </div>
+      <div className={styles.infoTabContainer}>
+        <Tab {...aboutMe} />
+        <Tab {...projects} />
+        <Tab {...contactMe} />
       </div>
       <div className={styles.infoContainer}>{info}</div>
     </>
