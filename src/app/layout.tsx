@@ -5,9 +5,9 @@ export const metadata = {
   title: "merricktian.me",
   description: "Personal website of Merrick Tian",
 
-  referrer: 'origin-when-cross-origin',
-  keywords: ['Next.js', 'React', 'JavaScript', 'TypeScript', 'Scss'],
-  creator: 'Merrick Tian',
+  referrer: "origin-when-cross-origin",
+  keywords: ["Next.js", "React", "JavaScript", "TypeScript", "Scss"],
+  creator: "Merrick Tian",
   alternates: {},
   formatDetection: {
     email: false,
@@ -23,9 +23,9 @@ export const metadata = {
       index: true,
       follow: false,
       noimageindex: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
     },
   },
 };

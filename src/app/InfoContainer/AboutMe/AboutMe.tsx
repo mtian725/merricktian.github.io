@@ -5,7 +5,7 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 const ABOUT_ME_TEXT =
-  "Nice to meet you. I am a Software Engineer focusing on Full-Stack development. Outside my career, I have my hobbies, which also include working on the occasional coding projects. Even though they often fail, I enjoy learning and experimenting with new ideas, but most of all, I enjoy making dumb and silly projects when I can.";
+  "Nice to meet you. I am a Software Engineer focusing on Full-Stack development. Outside my career, I have my hobbies, which also include working on the occasional coding projects. Even though they often fail, I enjoy learning and experimenting with new ideas, but most of all, I enjoy making dumb and silly projects whenever I can.";
 
 const AboutMe = (): JSX.Element => {
   return (
